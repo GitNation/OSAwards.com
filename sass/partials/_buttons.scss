@@ -1,0 +1,47 @@
+/* Buttons
+-----------------------------------------------------------------------------*/
+
+.basic-btn{
+	position: relative;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.43;
+	color: #ffffff;
+	height: 50px;
+	border-radius: 3px;
+	padding: 0 20px;
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	text-transform: uppercase;
+	transition: all linear 0.1s;
+	background-image: linear-gradient(284deg, #fd5426, #f88c55);
+	box-shadow: 0 25px 25px -10px rgba(253, 84, 38, 0.6);
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+
+	&:hover{
+		text-decoration: none;
+		/*background: transparent;*/
+			
+		&:after{
+			opacity: 1;
+		}
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 3px;
+		z-index: -1;
+		opacity: 0;
+		transition: all linear 0.1s;
+		background-image: linear-gradient(284deg, $clr-red, $clr-red);
+	}
+}
