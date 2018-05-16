@@ -79,7 +79,29 @@ $(function() {
 		}
 	})
 
-	// $(".project-submit").ajaxForm({url: 'server.php', type: 'post'})
+	/*---------------------------------------------------*/
+
+	$('.intro__img-wrap').on( "mousemove", function( event ) {
+		var $dood = $('.intro__img-s img'),
+			steps = 13,
+			mouseX = event.pageX - this.offsetLeft,
+			windowWidth = $(this).width(),
+			stepCur = Math.floor(mouseX / windowWidth * steps),
+			minOffset = 0,
+			maxOffset = 100 * (1 - 1 / steps);
+
+
+		var spriteOffset =  100 * (1 - (stepCur + 1) / steps);
+
+		//var spriteOffset =  100 * stepCur / steps;
+
+		if (spriteOffset < 0) spriteOffset = 0;
+		if (spriteOffset > maxOffset) spriteOffset = maxOffset;
+
+		$dood.css({
+			'transform': 'translateX('+ -spriteOffset + '%)'
+		});
+	});
 
 	/*---------------------------------------------------*/
 
