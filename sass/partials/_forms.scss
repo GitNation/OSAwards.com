@@ -258,7 +258,7 @@
 		}*/
 	}
 
-	@media only screen and (max-width : 1024px) {
+	@media only screen and (max-width : 1023px) {
 		width: 100%;
 
 		&__desc{
@@ -284,6 +284,14 @@
 		&__submit{
 			height: 60px;
 			width: 100%;
+		}
+	}
+
+	@media only screen and (max-height : 768px) {
+		width: 100%;
+
+		&__desc{
+			font-size: 26px;
 		}
 	}
 }

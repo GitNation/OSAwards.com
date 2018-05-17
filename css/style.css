@@ -803,7 +803,7 @@ h6 {
 		}*/ }
       .project-submit__input-wrap {
         max-width: 520px; } }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .project-submit {
       width: 100%; }
       .project-submit__desc {
@@ -822,6 +822,11 @@ h6 {
       .project-submit__submit {
         height: 60px;
         width: 100%; } }
+  @media only screen and (max-height: 768px) {
+    .project-submit {
+      width: 100%; }
+      .project-submit__desc {
+        font-size: 26px; } }
 
 .email-subscription {
   display: flex; }
@@ -1312,12 +1317,6 @@ h6 {
     padding: 120px 75px 0;
     max-width: 1380px;
     margin: auto auto 0; }
-  @media only screen and (max-height: 800px) {
-    .intro {
-      /*min-height: 100vh;*/
-      padding-bottom: 0; }
-      .intro__img-wrap {
-        width: 510px; } }
   @media only screen and (max-width: 1380px) {
     .intro {
       /*&__info{
@@ -1402,6 +1401,35 @@ h6 {
         display: none; }
       .intro .container {
         padding: 69px 10px 0; } }
+  @media only screen and (max-height: 768px) {
+    .intro__wrap {
+      min-height: 75vh; }
+    .intro__title {
+      font-size: 40px;
+      margin-top: 20px; }
+    .intro__desc {
+      font-size: 18px; }
+    .intro__img-wrap {
+      right: 0;
+      width: 38vw;
+      max-width: 460px;
+      bottom: -25vh;
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-30%); }
+    .intro .container {
+      padding-top: 100px; } }
+  @media (max-width: 920px) and (max-height: 768px) {
+    .intro__img-wrap {
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-20%); } }
+  @media (max-width: 680px) and (max-height: 768px) {
+    .intro__img-wrap {
+      width: 214px;
+      bottom: auto;
+      top: auto;
+      transform: translateY(0%); } }
 
 .ceremony {
   position: relative;
