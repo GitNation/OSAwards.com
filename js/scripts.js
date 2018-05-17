@@ -30,6 +30,15 @@ $(function(){(function(e){function t(t){this.input=t;if(t.attr("type")=="passwor
 
 $(function() {
 
+
+	/*---------------------------------------------------*/
+
+	// Resize on approach
+
+	
+
+	/*---------------------------------------------------*/
+
 	$('.project-submit').submit(function(e) {
 
 		var url = "php/script.php";
@@ -81,11 +90,11 @@ $(function() {
 
 	/*---------------------------------------------------*/
 
-	$('.intro__img-wrap').on( "mousemove", function( event ) {
+	$( document ).on( "mousemove", function( event ) {
 		var $dood = $('.intro__img-s img'),
 			steps = 13,
-			mouseX = event.pageX - this.offsetLeft,
-			windowWidth = $(this).width(),
+			mouseX = event.pageX,
+			windowWidth = $(window).width(),
 			stepCur = Math.floor(mouseX / windowWidth * steps),
 			minOffset = 0,
 			maxOffset = 100 * (1 - 1 / steps);

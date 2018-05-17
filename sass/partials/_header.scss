@@ -13,7 +13,7 @@
 	transition: all linear 0.1s;
 
 	.container{
-		max-width: 1360px;
+		max-width: none;
 		min-height: 100px;
 		display: flex;
 		justify-content: space-between;
@@ -119,6 +119,7 @@
 
 		&:hover{
 			text-decoration: none;
+			color: #fff;
 		}
 	}
 	
@@ -219,6 +220,8 @@
 
 		&:hover{
 			text-decoration: none;
+
+			color: #fff;
 		}
 	}
 
@@ -228,7 +231,7 @@
 		}
 	}
 
-	@media only screen and (max-width : 1024px) {
+	@media only screen and (max-width : 1023px) {
 		display: none;
 	}
 }
@@ -301,7 +304,7 @@
 		transition: all linear 0.1s;
 	}
 
-	@media only screen and (max-width : 1024px) {
+	@media only screen and (max-width : 1023px) {
 		display: flex;
 	}
 
@@ -386,7 +389,7 @@
 	&.adaptive{
 		padding: 0;
 
-		@media only screen and (max-width : 1024px) {
+		@media only screen and (max-width : 1023px) {
 			flex-direction: column;
 			position: absolute;
 			right: 0;

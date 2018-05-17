@@ -30,9 +30,9 @@ a {
 	color: $clr-red;
 	transition: all linear .1s;
 	text-decoration: none;
-
+			
 	&:hover{
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }
 

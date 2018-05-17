@@ -432,7 +432,7 @@ a {
   transition: all linear .1s;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
 
 .clearfix:after {
   clear: both;
@@ -605,6 +605,7 @@ h6 {
   z-index: 1; }
   .basic-btn:hover {
     text-decoration: none;
+    color: #fff;
     /*background: transparent;*/ }
     .basic-btn:hover:after {
       opacity: 1; }
@@ -627,7 +628,8 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 65px 0 0; }
+  margin: 65px 0 0;
+  max-width: 620px; }
   .project-submit__desc {
     font-size: 32px;
     font-weight: 700;
@@ -793,9 +795,14 @@ h6 {
     box-shadow: none; }
   @media only screen and (max-width: 1380px) {
     .project-submit {
-      margin: 4.68vw 0 0; }
-      .project-submit__desc {
-        font-size: 2.3vw; } }
+      margin: 70px 0 0;
+      /*margin: 4.68vw 0 0;
+
+		&__desc{
+			font-size: 2.3vw;
+		}*/ }
+      .project-submit__input-wrap {
+        max-width: 520px; } }
   @media only screen and (max-width: 1024px) {
     .project-submit {
       width: 100%; }
@@ -810,7 +817,8 @@ h6 {
         line-height: 1.36;
         margin: 0 0 20px 0; }
       .project-submit__input-wrap {
-        margin: 0 0 20px; }
+        margin: 0 0 20px;
+        max-width: 100%; }
       .project-submit__submit {
         height: 60px;
         width: 100%; } }
@@ -891,7 +899,7 @@ h6 {
   background: transparent;
   transition: all linear 0.1s; }
   .header .container {
-    max-width: 1360px;
+    max-width: none;
     min-height: 100px;
     display: flex;
     justify-content: space-between; }
@@ -950,7 +958,8 @@ h6 {
     text-decoration: none;
     transition: all linear 0.1s; }
     .logo__link:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #fff; }
   .logo__img {
     position: absolute;
     left: 0;
@@ -1019,11 +1028,12 @@ h6 {
     padding: 10px;
     transition: all linear 0.1s; }
     .main-menu__link:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #fff; }
   @media only screen and (max-width: 1280px) {
     .main-menu__item {
       margin: 0 15px; } }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .main-menu {
       display: none; } }
 
@@ -1079,7 +1089,7 @@ h6 {
     margin: auto;
     z-index: 1;
     transition: all linear 0.1s; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .socials-toggle {
       display: flex; } }
   @media only screen and (max-width: 680px) {
@@ -1139,7 +1149,7 @@ h6 {
     justify-content: center; }
   .socials.adaptive {
     padding: 0; }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1023px) {
       .socials.adaptive {
         flex-direction: column;
         position: absolute;
@@ -1213,7 +1223,7 @@ h6 {
       text-decoration: none; }
     .section__scroll-down .arrow-d {
       top: -4px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .section__title {
       font-size: 42px; }
     .section__sub-title {
@@ -1245,8 +1255,12 @@ h6 {
   padding: 0;
   display: flex;
   flex-direction: column;
-  /*padding-bottom: 150px;*/ }
+  /*padding-bottom: 150px;*/
+  height: 100vh;
+  min-height: 600px; }
   .intro__wrap {
+    min-height: 67vh;
+    display: flex;
     background-image: linear-gradient(68deg, #fd5426, #f88c55); }
     .intro__wrap.black {
       background: #35333f; }
@@ -1254,7 +1268,7 @@ h6 {
     display: flex;
     flex-direction: column;
     flex: 1 1 604px;
-    max-width: 50%; }
+    max-width: 65%; }
   .intro__title {
     font-size: 56px;
     font-weight: 700;
@@ -1270,8 +1284,7 @@ h6 {
     flex: 1 1 auto;
     right: 73px;
     position: absolute;
-    bottom: -225px;
-    z-index: 1; }
+    bottom: -225px; }
   .intro__img-s {
     padding: 125% 0 0;
     overflow: hidden;
@@ -1290,34 +1303,62 @@ h6 {
     height: auto; }
   .intro__scroll-wrap {
     position: relative;
-    padding: 80px 40px 20px;
+    padding: 60px 40px 35px;
     max-width: 1380px;
     margin: auto auto 0;
     width: 100%; }
   .intro .container {
     position: relative;
     padding: 120px 75px 0;
-    max-width: 1380px; }
+    max-width: 1380px;
+    margin: auto auto 0; }
   @media only screen and (max-height: 800px) {
     .intro {
-      min-height: 100vh;
+      /*min-height: 100vh;*/
       padding-bottom: 0; }
       .intro__img-wrap {
         width: 510px; } }
   @media only screen and (max-width: 1380px) {
-    .intro__title {
-      font-size: 4vw;
-      margin: 2.9vw 0 1.9vw; }
-    .intro__desc {
-      font-size: 1.78vw; }
+    .intro {
+      /*&__info{
+
+		}
+
+		&__title{
+			font-size: 4vw;
+			margin: 2.9vw 0 1.9vw;
+		}
+
+		&__desc{
+			font-size: 1.78vw;
+		}
+
+		&__img-wrap{
+			width: 30vw;
+			right: 2vw;
+			bottom: 0;
+
+			width: 36vw;
+			right: 5vw;
+			bottom: -16vw;
+		}
+
+		&__img{
+
+		}*/ }
+      .intro__img-wrap {
+        max-width: 39%;
+        width: 496px; } }
+  @media only screen and (max-width: 1280px) {
     .intro__img-wrap {
-      width: 30vw;
-      right: 2vw;
-      bottom: 0;
-      width: 36vw;
-      right: 5vw;
-      bottom: -16vw; } }
-  @media only screen and (max-width: 1024px) {
+      max-width: 39%;
+      width: 496px;
+      right: 0px;
+      bottom: -163px; }
+    .intro .container {
+      padding: 120px 55px 0;
+      max-width: 1420px; } }
+  @media only screen and (max-width: 1023px) {
     .intro__title {
       font-size: 40px;
       margin-top: 20px; }
@@ -1332,7 +1373,10 @@ h6 {
   @media only screen and (max-width: 680px) {
     .intro {
       margin: 0;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      height: auto; }
+      .intro__wrap {
+        min-height: 0; }
       .intro__info {
         max-width: none; }
       .intro__title {
@@ -1369,17 +1413,17 @@ h6 {
     top: 120px;
     left: 50%;
     transform: translateX(240px);
-    width: 440px;
+    width: 1240px;
     height: 680px;
     background-image: linear-gradient(327deg, #fd5426, #f88c55);
     z-index: -1; }
   .ceremony__wrap {
-    position: relative; }
+    position: relative;
+    background: url(../img/ceremony-img.jpg) center center no-repeat;
+    background-size: cover; }
   .ceremony__info {
     position: relative;
     min-height: 440px;
-    background: url(../img/ceremony-img.jpg) center center no-repeat;
-    background-size: cover;
     max-width: 1360px;
     margin: 0 auto;
     color: #fff;
@@ -1437,7 +1481,7 @@ h6 {
     .ceremony .section__desc span {
       color: #fd5426;
       font-weight: 700; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .ceremony:after {
       height: 620px; }
     .ceremony__info {
@@ -1461,7 +1505,11 @@ h6 {
       .ceremony__content {
         position: relative; }
       .ceremony__info {
+        background: url(../img/ceremony-img.jpg) center center no-repeat;
+        background-size: cover;
         min-height: 160px; }
+      .ceremony__wrap {
+        background: none; }
       .ceremony__more {
         width: 100%; }
       .ceremony .section__title {
@@ -1542,7 +1590,7 @@ h6 {
     .nominees-list__link a {
       text-decoration: none; }
       .nominees-list__link a:hover {
-        text-decoration: underline; }
+        color: #fd7620; }
   .nominees-list__desc {
     margin: 20px 0 10px;
     font-size: 14px;
@@ -1691,9 +1739,9 @@ h6 {
       z-index: 3; }
       @media only screen and (min-width: 680px) {
         .participants-list__item:hover .participants-list__head:after {
-          animation-name: example;
-          animation-duration: 0.5s;
-          animation-fill-mode: forwards; } }
+          width: 100%;
+          height: 100%;
+          border-radius: 0; } }
       .participants-list__item:hover .participants-list__desc {
         color: #35333f; }
       .participants-list__item:hover .socials {
@@ -1717,7 +1765,7 @@ h6 {
       border: 150px solid #fff;
       border-radius: 50%;
       z-index: 1;
-      opacity: 1; }
+      transition: all linear 0.1s; }
   .participants-list__img-box {
     width: 340px;
     height: 340px;
@@ -1748,7 +1796,7 @@ h6 {
     .participants-list__company a {
       text-decoration: none; }
       .participants-list__company a:hover {
-        text-decoration: underline; }
+        color: #fd7620; }
   .participants-list__desc {
     margin: 20px 0 0;
     font-size: 14px;
@@ -1758,12 +1806,6 @@ h6 {
   .participants-list .socials {
     opacity: 0.25;
     transition: all linear 0.1s; }
-
-@keyframes example {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
   @media only screen and (max-width: 1360px) {
     .participants-list {
       margin: 64px 0 82px; } }
@@ -1802,6 +1844,8 @@ h6 {
     font-weight: 700;
     line-height: 1.56;
     margin: 12px 0 20px; }
+    .news-list__title a:hover {
+      color: #fd7620; }
   .news-list__time {
     font-size: 14px;
     line-height: 1.43;
@@ -1813,7 +1857,7 @@ h6 {
     line-height: 1.67;
     color: #35333f;
     margin: 20px 0 20px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .news-list__title {
       font-size: 26px; }
     .news-list__desc {
@@ -1856,7 +1900,7 @@ h6 {
     font-size: 32px;
     font-weight: 400;
     margin: 0 12px; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .archive-block {
       margin: 30px 0 30px;
       flex-direction: column; }
@@ -1893,8 +1937,8 @@ h6 {
     min-width: 76px;
     min-height: 59px;
     text-align: center;
-    justify-content: center;
-    align-items: flex-end; }
+    /*justify-content: center;*/
+    align-items: stretch; }
     .archive-list__item.active {
       font-size: 56px;
       font-weight: 700;
@@ -1917,13 +1961,16 @@ h6 {
       transition: all linear 0.1s; }
   .archive-list__link {
     color: #fff;
-    height: 100%;
-    display: block; }
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end; }
     .archive-list__link:hover {
+      color: #fff;
       font-size: 32px;
       line-height: 1.28;
       text-decoration: none; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1023px) {
     .archive-list {
       justify-content: center; } }
   @media only screen and (max-width: 680px) {

@@ -7,6 +7,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	margin: 65px 0 0;
+	max-width: 620px;
 
 	&__desc{
 		font-size: 32px;
@@ -244,11 +245,17 @@
 	}
 
 	@media only screen and (max-width : 1380px) {
-		margin: 4.68vw 0 0;
+		margin: 70px 0 0;
+
+		&__input-wrap{
+			max-width: 520px;
+		}
+
+		/*margin: 4.68vw 0 0;
 
 		&__desc{
 			font-size: 2.3vw;
-		}
+		}*/
 	}
 
 	@media only screen and (max-width : 1024px) {
@@ -271,6 +278,7 @@
 
 		&__input-wrap{
 			margin: 0 0 20px;
+			max-width: 100%;
 		}
 
 		&__submit{
