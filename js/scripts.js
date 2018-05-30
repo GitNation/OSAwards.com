@@ -393,6 +393,9 @@ $('.project-submit__submit').on('click', function(e) {
         dataType: "json",
         data: $form.serializeObject()
     }).success(
-        alert("Thank you for submiting a project! We ll take a look and nominee if it worth it.");
+		function(){
+            alert("Thank you for submiting a project! We ll take a look and nominee if it worth it.");
+            $('.project-submit__input').val('');
+		}
     );
 })
