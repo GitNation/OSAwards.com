@@ -104,11 +104,12 @@
 										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#error"></use>
 									</svg>
 								</div>
-								<input class="project-submit__input" type="url" name="" placeholder="Repository URL">
+								<input type="hidden" name="Technology" value="JavaScript">
+								<input class="project-submit__input" type="url" name="Project" placeholder="Repository URL">
 							</div>
 
 							<p class="project-submit__tip">Should be a GitHub link</p>
-							<button class="project-submit__submit" type="submit" disabled>
+							<button class="project-submit__submit" type="submit">
 								SUBMIT
 								
 								<svg class="arrow-r" role="img" aria-hidden="true">
@@ -227,7 +228,7 @@
 				<ul class="nominees-list fun-project-slider">
 					<li class="nominees-list__item">
 						<div class="nominees-list__img-box">
-							<img src="pic/project_dummy.jpg" height="160" width="160" alt="">
+							<img src="pic/warrior.png" height="160" width="160" alt="">
 						</div>
 
 						<h5 class="nominees-list__title">WarriorJS</h5>
@@ -836,6 +837,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.serialize-object.js"></script>
 <script src="js/scripts.js"></script>
 
 </body>

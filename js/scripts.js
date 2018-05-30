@@ -381,3 +381,18 @@ $(function() {
 	
 
 });
+
+var $form = $('form.project-submit'),
+    url = 'https://script.google.com/macros/s/AKfycbzByR3QaMqTVRPx9QIDAJebDupajfjBwWSjK9m2X2xSwk8BMGE/exec'
+
+$('.project-submit__submit').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+    }).success(
+        alert("Thank you for submiting a project! We ll take a look and nominee if it worth it.");
+    );
+})
