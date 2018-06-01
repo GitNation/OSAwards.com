@@ -1,6 +1,13 @@
 /* Content
 -----------------------------------------------------------------------------*/
 
+.winner {
+	background-image: url("../img/winner.png") !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+
+}
+
 .content {
 	min-height: 1500px;
 	padding-bottom: 150px;

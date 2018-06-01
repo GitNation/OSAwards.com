@@ -186,6 +186,44 @@ $(function() {
 
 	// Sliders
 
+    $('.technology-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        arrows: true,
+        lazyLoad: 'ondemand',
+        appendArrows: '#technology-slider-nav',
+        prevArrow: '<div class="slick-prev"><svg class="arrow-r" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-r"></use></svg></div>',
+        nextArrow: '<div class="slick-next"><svg class="arrow-r" role="img" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#arrow-r"></use></svg></div>',
+        responsive: [
+            {
+                breakpoint: 1120,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    centerMode: true,
+                    slidesToShow: 1,
+                    centerPadding: '30px',
+                    slidesToScroll: 1
+                }
+            },
+        ]
+    });
+
 	$('.breakthrough-slider').slick({
 		dots: false,
 		infinite: false,
