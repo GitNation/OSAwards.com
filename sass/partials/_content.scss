@@ -1,12 +1,6 @@
 /* Content
 -----------------------------------------------------------------------------*/
 
-/*.winner {
-	background-image: url("../img/winner.png") !important;
-	background-repeat: no-repeat !important;
-	background-size: contain !important;
-}*/
-
 .content {
 	min-height: 1500px;
 	padding-bottom: 150px;
@@ -584,6 +578,7 @@
 	flex-wrap: wrap;
 
 	&__item{
+		position: relative;
 		width: 340px;
 		background: #fff;
 		border-radius: 1px;
@@ -595,6 +590,7 @@
 		padding: 0 20px;
 		min-height: 350px;
 		transition: all linear 0.1s;
+		overflow: hidden;
 
 		&:hover{
 			border-color: $clr-white;
@@ -606,11 +602,23 @@
 		}
 
 		&.winner{
-			background: url("../img/winner.png") center 28px no-repeat;
-			background-size: 180px;
-			background-color: #fff;
+			background-color: #fbfbfb;
 
-
+			&:after{
+				font-weight: 900;
+				content: "WINNER";
+				position: absolute;
+				left: 0;
+				top: 21px;
+				height: 28px;
+				line-height: 28px;
+				font-size: 18px;
+				background: #fd5426;
+				left: -28px;
+				width: 130px;
+				color: #fff;
+				transform: rotate(-45deg);
+			}
 		}
 	}
 

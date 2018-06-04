@@ -1189,11 +1189,6 @@ h6 {
 
 /* Content
 -----------------------------------------------------------------------------*/
-/*.winner {
-	background-image: url("../img/winner.png") !important;
-	background-repeat: no-repeat !important;
-	background-size: contain !important;
-}*/
 .content {
   min-height: 1500px;
   padding-bottom: 150px; }
@@ -1588,6 +1583,7 @@ h6 {
   display: flex;
   flex-wrap: wrap; }
   .nominees-list__item {
+    position: relative;
     width: 340px;
     background: #fff;
     border-radius: 1px;
@@ -1598,16 +1594,29 @@ h6 {
     height: 100%;
     padding: 0 20px;
     min-height: 350px;
-    transition: all linear 0.1s; }
+    transition: all linear 0.1s;
+    overflow: hidden; }
     .nominees-list__item:hover {
       border-color: #f2f2f2;
       box-shadow: 0 50px 40px -10px rgba(67, 64, 79, 0.2); }
       .nominees-list__item:hover .nominees-list__desc {
         color: #35333f; }
     .nominees-list__item.winner {
-      background: url("../img/winner.png") center 28px no-repeat;
-      background-size: 180px;
-      background-color: #fff; }
+      background-color: #fbfbfb; }
+      .nominees-list__item.winner:after {
+        font-weight: 900;
+        content: "WINNER";
+        position: absolute;
+        left: 0;
+        top: 21px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 18px;
+        background: #fd5426;
+        left: -28px;
+        width: 130px;
+        color: #fff;
+        transform: rotate(-45deg); }
   .nominees-list__img-box {
     width: 80px;
     height: 80px;
