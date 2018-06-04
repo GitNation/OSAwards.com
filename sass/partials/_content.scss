@@ -1,12 +1,11 @@
 /* Content
 -----------------------------------------------------------------------------*/
 
-.winner {
+/*.winner {
 	background-image: url("../img/winner.png") !important;
 	background-repeat: no-repeat !important;
 	background-size: contain !important;
-
-}
+}*/
 
 .content {
 	min-height: 1500px;
@@ -605,16 +604,26 @@
 				color: $clr-black;
 			}
 		}
+
+		&.winner{
+			background: url("../img/winner.png") center 28px no-repeat;
+			background-size: 180px;
+			background-color: #fff;
+
+
+		}
 	}
 
 	&__img-box{
 		width: 80px;
 		height: 80px;
 		margin: 40px auto;
+		display: flex;
 
 		img{
 			width: 100%;
 			height: auto;
+			margin: auto 0;
 		}
 	}
 

@@ -1189,11 +1189,11 @@ h6 {
 
 /* Content
 -----------------------------------------------------------------------------*/
-.winner {
-  background-image: url("../img/winner.png") !important;
-  background-repeat: no-repeat !important;
-  background-size: contain !important; }
-
+/*.winner {
+	background-image: url("../img/winner.png") !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+}*/
 .content {
   min-height: 1500px;
   padding-bottom: 150px; }
@@ -1604,13 +1604,19 @@ h6 {
       box-shadow: 0 50px 40px -10px rgba(67, 64, 79, 0.2); }
       .nominees-list__item:hover .nominees-list__desc {
         color: #35333f; }
+    .nominees-list__item.winner {
+      background: url("../img/winner.png") center 28px no-repeat;
+      background-size: 180px;
+      background-color: #fff; }
   .nominees-list__img-box {
     width: 80px;
     height: 80px;
-    margin: 40px auto; }
+    margin: 40px auto;
+    display: flex; }
     .nominees-list__img-box img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin: auto 0; }
   .nominees-list__title {
     font-size: 20px;
     line-height: 1;
