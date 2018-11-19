@@ -24,8 +24,11 @@
 
 	&:hover{
 		text-decoration: none;
-		color: #fff;
+		//color: #fff;
+		//box-shadow: 0 25px 25px -10px rgba(67,64,79,.25);
 		/*background: transparent;*/
+		transform:translateY(-3px);
+		box-shadow: 0 35px 30px -10px rgba(253, 84, 38, 0.8);
 			
 		&:after{
 			opacity: 1;
@@ -44,5 +47,6 @@
 		opacity: 0;
 		transition: all linear 0.1s;
 		background-image: linear-gradient(284deg, $clr-red, $clr-red);
+		//background: #43404f;
 	}
 }

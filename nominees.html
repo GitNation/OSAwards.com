@@ -7,9 +7,13 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="css/style.min.css" />
+	<style type="text/css">
+		.wrapper {opacity: 0;}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?16112018" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900">
 	<link rel="shortcut icon" href="img/favicon.png" />
+
 </head>
 
 <body>
@@ -25,7 +29,7 @@
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/logo.svg#logo"></use>
 				</svg>
 			</div>
-			
+
 			<nav class="main-nav">
 				<ul class="main-menu">
 					<li class="main-menu__item"><a class="main-menu__link" href="#nominees">Nominees</a></li>
@@ -33,7 +37,7 @@
 					<li class="main-menu__item"><a class="main-menu__link" href="#news">News</a></li>
 				</ul>
 			</nav>
-			
+
 			<div class="h-right">
 
 				<div class="socials-wrap">
@@ -45,7 +49,7 @@
 								</svg>
 							</a>
 						</li>
-					
+
 						<li class="socials__item">
 							<a class="socials__link" href="#">
 								<svg class="socials__img" role="img" aria-hidden="true">
@@ -53,7 +57,7 @@
 								</svg>
 							</a>
 						</li>
-					
+
 						<li class="socials__item">
 							<a class="socials__link" href="#">
 								<svg class="socials__img" role="img" aria-hidden="true">
@@ -62,14 +66,14 @@
 							</a>
 						</li>
 					</ul>
-					
+
 					<button class="socials-toggle">
 						<svg class="socials-toggle__img" role="img" aria-hidden="true">
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-inline.svg#socials"></use>
 						</svg>
 					</button>
 				</div>
-				
+
 				<a class="h-nominate-btn basic-btn" href="#intro">Nominate a project</a>
 			</div>
 		</div>
@@ -77,14 +81,13 @@
 	</header><!-- .header -->
 
 	<main class="content">
-
 		<section class="section archive-menu">
 			<div class="container">
 				<div class="archive-block">
 					<div class="archive-block__title">
 						Nominees <span>for</span>
 					</div>
-				
+
 					<ul class="archive-list">
 						<li class="archive-list__item active"><a class="archive-list__link" href="#">2017</a></li>
 						<li class="archive-list__item"><a class="archive-list__link" href="#">2016</a></li>
@@ -94,6 +97,17 @@
 						<li class="archive-list__item"><a class="archive-list__link" href="#">2012</a></li>
 					</ul>
 				</div>
+			</div>
+		</section>
+
+		<section class="section archive-menu__mobile">
+			<div class="archive-list" data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons":false, "pageDots":false, "initialIndex": 0 }'>
+				<div class="archive-list__item active"><a class="archive-list__link" href="#">2017</a></div>
+				<div class="archive-list__item"><a class="archive-list__link" href="#">2016</a></div>
+				<div class="archive-list__item"><a class="archive-list__link" href="#">2015</a></div>
+				<div class="archive-list__item"><a class="archive-list__link" href="#">2014</a></div>
+				<div class="archive-list__item"><a class="archive-list__link" href="#">2013</a></div>
+				<div class="archive-list__item"><a class="archive-list__link" href="#">2012</a></div>
 			</div>
 		</section>
 
@@ -182,7 +196,7 @@
 				</div>
 			</div>
 
-			<div class="f-right">		
+			<div class="f-right">
 				<ul class="socials">
 					<li class="socials__item">
 						<a class="socials__link" href="#">
@@ -191,7 +205,7 @@
 							</svg>
 						</a>
 					</li>
-				
+
 					<li class="socials__item">
 						<a class="socials__link" href="#">
 							<svg class="socials__img" role="img" aria-hidden="true">
@@ -201,9 +215,10 @@
 					</li>
 				</ul>
 
-				<form class="email-subscription">
-					<input class="email-subscription__input" type="text" name="" placeholder="E-mail subscription">
-					<button class="email-subscription__submit" type="submit">Subscribe</button>
+				<form class="email-subscription" action="https://frontendamsterdam.us13.list-manage.com/subscribe/post?u=910284f989b81c945f27311af&amp;id=b1be3f216e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_910284f989b81c945f27311af_b1be3f216e" tabindex="-1" value=""></div>
+					<input class="email-subscription__input" type="email"  placeholder="E-mail subscription" name="EMAIL" id="mce-EMAIL">
+					<button class="email-subscription__submit" type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
 				</form>
 			</div>
 		</div>
@@ -212,9 +227,36 @@
 
 </div>
 
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '5b0ef2ffa93eeb21204e73ec');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+<div style="display: none;">
+	<script type="text/javascript">
+		document.write("<a href='//www.liveinternet.ru/click' "+
+			"target=_blank><img src='//counter.yadro.ru/hit?t45.6;r"+
+			escape(document.referrer)+((typeof(screen)=="undefined")?"":
+				";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+				screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+			";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+			"' alt='' title='LiveInternet' "+
+			"border='0' width='31' height='31'><\/a>");
+	</script><!--/LiveInternet-->
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js?16112018"></script>
 
 </body>
 </html>

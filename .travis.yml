@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-  - "8.6.0"
-install:
-- yarn
-after_success: gulp deploy --user $FTP_USER --password $FTP_PASSWORD
-branches:
-  only:
-  - master

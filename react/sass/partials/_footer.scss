@@ -1,0 +1,160 @@
+/* Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+	//background-image: linear-gradient(327deg,#00dc3a,#00dc3a);
+	background:#00dc3a;
+
+	.container{
+		max-width: 1360px;
+		padding: 55px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media only screen and (max-width : 1024px) {
+
+		.container{
+			padding: 55px 25px;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	@media only screen and (max-width : 680px) {
+
+		.container{
+			padding: 10px;
+		}
+	}
+}
+
+.f-left{
+	display: flex;
+
+	@media only screen and (max-width : 1024px) {
+		justify-content: center;
+	}
+
+
+	@media only screen and (max-width : 680px) {
+		margin: 0 0 14px;
+	}
+}
+
+.f-right{
+	/*height: 70px;*/
+	display: flex;
+	padding: 10px 0;
+
+	.socials{
+		margin: 0 14px 0 0;
+
+		&__item{
+			margin: 0 20px 0 0;
+		}
+
+		&__link{
+			width: 50px;
+			height: 50px;
+
+			&:after{
+				width: 50px;
+				height: 50px;
+			}
+
+			&:hover{
+				&:after{
+					width: 60px;
+					height: 60px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : 1024px) {
+		justify-content: center;
+	}
+
+	@media only screen and (max-width : 680px) {
+		flex-direction: column;
+
+		.email-subscription{
+			order: 1;
+		}
+
+		.socials{
+			margin: 20px 0;
+			order: 2;
+			justify-content: center;
+
+			&__item{
+				margin: 0 10px;
+			}
+		}
+	}
+}
+
+.f-logo{
+	height: 201px;
+	width: 211px;
+	min-width: 211px;
+	margin: -106px 0 0 0;
+
+	&__link {
+		font-size: 24px;
+		display: block;
+		height: 100%;
+		color: #fff;
+		text-decoration: none;
+		background: url(../img/intro-img.png) no-repeat;
+		transition: none;
+		background-size: 100%;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	@media only screen and (max-width : 680px) {
+		margin: -42px 0 0 0;
+		width: 105px;
+		height: 100px;
+		min-width: 105px;
+
+
+	}
+}
+
+.f-company{
+	color: #fff;
+
+	&__title{
+		font-size: 32px;
+		font-weight: 900;
+		line-height: 0.94;
+		margin: 0 0 20px;
+		white-space: nowrap;
+	}
+
+	&__desc{
+		font-family: $lato;
+		font-size: 16px;
+		line-height: 1.25;
+		margin: 20px 0 0;
+	}
+
+	@media only screen and (max-width : 680px) {
+		padding: 10px 0 0px;
+
+		&__title{
+			font-size: 16px;
+			margin: 0 0 10px;
+		}
+
+		&__desc{
+			font-size: 10px;
+			margin: 10px 0 0;
+		}
+	}
+}

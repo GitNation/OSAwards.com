@@ -1,15 +1,11 @@
 {
-  "name": "GitNation",
+  "name": "OpenSourceAwards",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
+    "deploy": "gulp deploy",
     "build": "gulp build",
     "dev": "gulp watch",
     "test": "echo \"Success!\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "..."
   },
   "devDependencies": {
     "autoprefixer": "^7.0.1",
@@ -27,5 +23,9 @@
     "postcss-cssnext": "^2.10.0",
     "precss": "^1.4.0",
     "vinyl-ftp": "^0.5.0"
-  }
+  },
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "author": "Git Nation",
+  "description": ""
 }

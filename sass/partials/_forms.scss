@@ -24,6 +24,13 @@
 		color: $clr-red;
 		margin: 0 0 10px;
 		display: none;
+
+		span {
+			transform:translateX(-50px);
+			transition:all 1s;
+			opacity:0;
+			display:inline-block;
+		}
 	}
 
 	&__input-wrap{
@@ -142,6 +149,11 @@
 			}
 		}
 
+		&:disabled {
+			pointer-events:none;
+			background-color: #ccc;
+		}
+
 		&:after{
 			content: '';
 			position: absolute;
@@ -228,6 +240,7 @@
 	}
 
 	&.submitted{
+		margin-top:35px;
 
 		.project-submit__desc,
 		.project-submit__submit{
@@ -241,6 +254,13 @@
 
 		.project-submit__input-wrap{
 			box-shadow: none;
+		}
+
+		.project-submit__succesful{
+			span {
+				transform:translateX(0);
+				opacity:1;
+			}
 		}
 	}
 
@@ -284,6 +304,13 @@
 		&__submit{
 			height: 60px;
 			width: 100%;
+		}
+
+		&__succesful{
+			font-size:30px;
+			br {
+				display:none;
+			}
 		}
 	}
 

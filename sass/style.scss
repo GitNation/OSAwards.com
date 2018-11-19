@@ -53,11 +53,15 @@ a {
 	color: transparent;
 }
 
+.page_loaded .wrapper {opacity:1;}
+
 .wrapper {
 	position: relative;
 	overflow: hidden;
 	min-height: 100%;
 	min-width: 300px;
+
+	transition:all .9s;
 }
 
 .container {
@@ -83,7 +87,10 @@ h6 {
 
 
 @import "vendor/slick";
+@import "vendor/aos";
+@import "vendor/flickity";
 
+@import "partials/animations";
 @import "partials/fonts";
 @import "partials/icons";
 @import "partials/buttons";
