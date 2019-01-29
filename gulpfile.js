@@ -132,7 +132,8 @@ gulp.task('deploy', function() {
         host: 'buff.elastictech.org',
         user: args.user,
         password: args.password,
-        log: gutil.log
+        log: gutil.log,
+        parallel: 10,
     });
     gulp.src([
         './**/*.*',

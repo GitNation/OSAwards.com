@@ -110,7 +110,7 @@ $(function() {
 		var input = $(this).closest('.project-submit').find('.project-submit__input');
 		var submit = $(this).closest('.project-submit').find('.project-submit__submit');
 
-		if (value.indexOf('https://github.com/') == 0) {
+		if (value.match(/\/\/github.com\//g)) {
 			form.addClass('correct').removeClass('incorrect');
 			submit.prop("disabled", false);
 		} else if (value){
@@ -167,14 +167,14 @@ $(function() {
 	// Bind to scroll
 	$(window).scroll(function(){
 		var fromTop = $(this).scrollTop()+topMenuHeight;
-		
+
 		var cur = scrollItems.map(function(){
 			if ($(this).offset().top < fromTop)
 			return this;
 		});
 		cur = cur[cur.length-1];
 		var id = cur && cur.length ? cur[0].id : "";
-		
+
 		if (lastId !== id) {
 			lastId = id;
 			menuItems
@@ -479,7 +479,7 @@ $(function() {
 	/*---------------------------------------------------*/
 
 	$('input[placeholder], textarea[placeholder]').placeholder();
-	
+
 	$('.logo').logoHandler();
 	$('.js_tiles').tilesSlider();
 
@@ -532,7 +532,6 @@ jQuery.fn.tilesSlider=function(options ){
 
 		$t.trigger.on('click', function(e){
 			if(e.target.tagName.toLowerCase() != 'a'){
-				e.preventDefault();
 				$t.items.slideUp(300);
 				$t.trigger.slideDown(300);
 				$(this).slideUp(300);

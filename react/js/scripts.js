@@ -110,7 +110,7 @@ $(function() {
 		var input = $(this).closest('.project-submit').find('.project-submit__input');
 		var submit = $(this).closest('.project-submit').find('.project-submit__submit');
 
-		if (value.indexOf('https://github.com/') == 0) {
+		if (value.match(/\/\/github.com\//g)) {
 			form.addClass('correct').removeClass('incorrect');
 			submit.prop("disabled", false);
 		} else if (value){
