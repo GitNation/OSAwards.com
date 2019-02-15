@@ -104,7 +104,7 @@ $(function() {
 
 	// Project submition
 
-	$('.project-submit__input').change(function(){
+	$('.project-submit__input').on("input", function(){
 		var value = $(this).val();
 		var form = $(this).closest('.project-submit');
 		var input = $(this).closest('.project-submit').find('.project-submit__input');
