@@ -56,6 +56,7 @@ $(function() {
 
 	$('.project-submit__submit').on('click', function(e) {
 	    e.preventDefault();
+		$('.project-submit').addClass('submitting');
 	    var jqxhr = $.ajax({
 	        url: url,
 	        method: "GET",
@@ -66,6 +67,7 @@ $(function() {
 	            //alert("Thank you for submiting a project! We ll take a look and nominee if it worth it.");
 	            //$('.project-submit__input').val('');
 	            $('.project-submit').addClass('submitted');
+				$('.project-submit').removeClass('submitting');
 				$('.project-submit').closest('.intro__wrap').addClass('black');
 				$('.project-submit').find('.project-submit__input').prop("readonly", true);
 			}
@@ -92,6 +94,7 @@ $(function() {
 	});*/
 
 	$('.project-submit__reset').click(function(){
+		$(this).closest('.project-submit').removeClass('submitting');
 		$(this).closest('.project-submit').removeClass('submitted');
 		$(this).closest('.intro__wrap').removeClass('black');
 		$(this).closest('.project-submit').find('.project-submit__input').prop("readonly", false);

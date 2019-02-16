@@ -55,21 +55,23 @@ $(function() {
     url = 'https://script.google.com/macros/s/AKfycbzByR3QaMqTVRPx9QIDAJebDupajfjBwWSjK9m2X2xSwk8BMGE/exec'
 
 	$('.project-submit__submit').on('click', function(e) {
-	    e.preventDefault();
-	    var jqxhr = $.ajax({
-	        url: url,
-	        method: "GET",
-	        dataType: "json",
-	        data: $form.serializeObject()
-	    }).success(
+		e.preventDefault();
+		$('.project-submit').addClass('submitting');
+		var jqxhr = $.ajax({
+			url: url,
+			method: "GET",
+			dataType: "json",
+			data: $form.serializeObject()
+		}).success(
 			function(){
-	            //alert("Thank you for submiting a project! We ll take a look and nominee if it worth it.");
-	            //$('.project-submit__input').val('');
-	            $('.project-submit').addClass('submitted');
+				//alert("Thank you for submiting a project! We ll take a look and nominee if it worth it.");
+				//$('.project-submit__input').val('');
+				$('.project-submit').addClass('submitted');
+				$('.project-submit').removeClass('submitting');
 				$('.project-submit').closest('.intro__wrap').addClass('black');
 				$('.project-submit').find('.project-submit__input').prop("readonly", true);
 			}
-	    );
+		);
 	})
 
 	/*$('.project-submit').submit(function(e) {

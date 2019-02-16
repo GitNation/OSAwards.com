@@ -116,6 +116,7 @@
 		margin: 10px 0 14px;
 	}
 
+	&__preloader,
 	&__submit,
 	&__reset{
 		position: relative;
@@ -177,6 +178,17 @@
 		}
 	}
 
+	&__preloader {
+		text-align: center;
+		vertical-align: middle;
+		line-height: 100%;
+
+		.preloader {
+			display: inline-block;
+		}
+	}
+
+	&__preloader,
 	&__reset{
 		display: none;
 		//box-shadow: 0 8px 15px -5px rgba(253, 220, 38, 0.4);
@@ -239,6 +251,15 @@
 		}
 	}
 
+	&.submitting {
+		.project-submit__submit, .project-submit__reset{
+			display: none;
+		}
+		.project-submit__preloader {
+			display: block;
+		}
+	}
+
 	&.submitted{
 		margin-top:35px;
 
@@ -250,6 +271,10 @@
 		.project-submit__succesful,
 		.project-submit__reset{
 			display: block;
+		}
+
+		.project-submit__preloader {
+			display: none;
 		}
 
 		.project-submit__input-wrap{
