@@ -2502,7 +2502,7 @@ https://flickity.metafizzy.co
     .tiles .tile_content .inner {
       font-size: 12px;
       line-height: 1.5; }
-  @media (min-width: 768px) and (min-height: 768px) {
+  @media (min-width: 768px) {
     .tiles {
       font-size: 0;
       padding: 0; }
