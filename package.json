@@ -2,7 +2,6 @@
   "name": "OpenSourceAwards",
   "version": "1.0.0",
   "scripts": {
-    "deploy": "gulp deploy",
     "build": "gulp build",
     "dev": "gulp watch",
     "test": "echo \"Success!\""
