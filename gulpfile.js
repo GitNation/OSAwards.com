@@ -133,14 +133,13 @@ gulp.task('deploy', function() {
         user: args.user,
         password: args.password,
         log: gutil.log,
-        parallel: 3,
+        parallel: 10,
     });
     gulp.src([
         './**/*.*',
         '!./.*',
         '!./node_modules/**/*.*'
     ])
-        .pipe(conn.newer(remotePath))
         .pipe(conn.dest(remotePath));
 });
 
