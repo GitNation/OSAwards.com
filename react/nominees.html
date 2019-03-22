@@ -93,8 +93,9 @@
           <nav class="main-nav">
             <ul class="main-menu">
               <li class="main-menu__item"><a class="main-menu__link" href="#nominees">Nominees</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#jury">Jury</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#news">News</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="index.html">2019</a></li>
+              <!-- <li class="main-menu__item"><a class="main-menu__link" href="#jury">Jury</a></li> -->
+              <!-- <li class="main-menu__item"><a class="main-menu__link" href="#news">News</a></li> -->
             </ul>
           </nav>
 
@@ -102,7 +103,7 @@
             <div class="socials-wrap">
               <ul class="socials adaptive">
                 <li class="socials__item">
-                  <a class="socials__link" href="#">
+                  <a class="socials__link" href="https://twitter.com/reactamsterdam">
                     <svg class="socials__img" role="img" aria-hidden="true">
                       <use
                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -113,7 +114,7 @@
                 </li>
 
                 <li class="socials__item">
-                  <a class="socials__link" href="#">
+                  <a class="socials__link" href="https://www.facebook.com/reactamsterdam">
                     <svg class="socials__img" role="img" aria-hidden="true">
                       <use
                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -124,7 +125,7 @@
                 </li>
 
                 <li class="socials__item">
-                  <a class="socials__link" href="#">
+                  <a class="socials__link" href="mailto:hi@gitnation.org">
                     <svg class="socials__img" role="img" aria-hidden="true">
                       <use
                         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -142,7 +143,7 @@
               </button>
             </div>
 
-            <a class="h-nominate-btn basic-btn" href="#intro">Nominate a project</a>
+            <a class="h-nominate-btn basic-btn" href="index.html#intro">Nominate a project</a>
           </div>
         </div>
       </header>
@@ -156,12 +157,12 @@
 
               <ul class="archive-list">
                 <li class="archive-list__item active"><a class="archive-list__link" href="#">2018</a></li>
-                <li class="archive-list__item"><a class="archive-list__link" href="#">2017</a></li>
+                <!-- <li class="archive-list__item"><a class="archive-list__link" href="#">2017</a></li>
                 <li class="archive-list__item"><a class="archive-list__link" href="#">2016</a></li>
                 <li class="archive-list__item"><a class="archive-list__link" href="#">2015</a></li>
                 <li class="archive-list__item"><a class="archive-list__link" href="#">2014</a></li>
                 <li class="archive-list__item"><a class="archive-list__link" href="#">2013</a></li>
-                <li class="archive-list__item"><a class="archive-list__link" href="#">2012</a></li>
+                <li class="archive-list__item"><a class="archive-list__link" href="#">2012</a></li> -->
               </ul>
             </div>
           </div>
@@ -173,18 +174,285 @@
             data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons":false, "pageDots":false, "initialIndex": 0 }'
           >
             <div class="archive-list__item active"><a class="archive-list__link" href="#">2018</a></div>
-            <div class="archive-list__item"><a class="archive-list__link" href="#">2017</a></div>
+            <!-- <div class="archive-list__item"><a class="archive-list__link" href="#">2017</a></div>
             <div class="archive-list__item"><a class="archive-list__link" href="#">2016</a></div>
             <div class="archive-list__item"><a class="archive-list__link" href="#">2015</a></div>
             <div class="archive-list__item"><a class="archive-list__link" href="#">2014</a></div>
             <div class="archive-list__item"><a class="archive-list__link" href="#">2013</a></div>
-            <div class="archive-list__item"><a class="archive-list__link" href="#">2012</a></div>
+            <div class="archive-list__item"><a class="archive-list__link" href="#">2012</a></div> -->
           </div>
         </section>
 
-        <section class="section archive">
+        <section class="section nominees" id="nominees">
           <div class="container">
-            <ul class="winners">
+
+          
+            
+            <div class="section__desc slider-nav-wrap">
+              <div class="slider-nav-wrap__left">
+                <h4 class="section__sub-title" data-aos="fade-left">Breakthrough of the year</h4>
+                <p class="section__p" data-aos="fade-in">Project contributing the most to the React ecosystem, adding new dimensions
+                  to it and possibilities for further development. New concepts/ideas with big future potential and good first
+                  realization in 2017.</p>
+              </div>
+            
+              <div class="slider-nav centered" id="technology-slider-nav"></div>
+            </div>
+            
+            <ul class="nominees-list technology-slider">
+              <li class="nominees-list__item winner" data-aos="fade-up" data-aos-delay="100">
+                <div class="nominees-list__img-box">
+                  <img src="pic/apollo.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Apollo GraphQL</h5>
+                <p class="nominees-list__link"><a href="https://www.apollographql.com">apollographql.com</a></p>
+                <p class="nominees-list__desc">Apollo provides a universal GraphQL API on top of your existing services, so you can
+                  build new application features fast without waiting on backend changes.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="200">
+                <div class="nominees-list__img-box">
+                  <img src="pic/parcel.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Parcel</h5>
+                <p class="nominees-list__link"><a href="https://parceljs.org">parceljs.org</a></p>
+                <p class="nominees-list__desc">Blazing fast, zero configuration web application bundler.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="nominees-list__img-box">
+                  <img src="pic/expo.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Expo</h5>
+                <p class="nominees-list__link"><a href="https://expo.io/">expo.io</a></p>
+                <p class="nominees-list__desc">Expo is a free and open source toolchain built around React Native to help you build
+                  native iOS and Android projects using JavaScript and React.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="400">
+                <div class="nominees-list__img-box">
+                  <img src="pic/reason-react.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Reason React</h5>
+                <p class="nominees-list__link"><a href="https://reasonml.github.io/reason-react">reasonml.github.io/reason-react</a>
+                </p>
+                <p class="nominees-list__desc">Reason bindings for ReactJS.</p>
+              </li>
+            </ul>
+            
+            <div class="section__desc slider-nav-wrap">
+              <div class="slider-nav-wrap__left">
+                <h4 class="section__sub-title" data-aos="fade-in">The most exciting use of technology</h4>
+                <p class="section__p" data-aos="fade-in">Unique, non-standard practical React usage, that you'd never think of. Mix
+                  with non traditional software and technologies, that makes React shine boosting development/maintenance
+                  qualifiers.</p>
+              </div>
+            
+              <div class="slider-nav centered" id="breakthrough-slider-nav"></div>
+            </div>
+            
+            <ul class="nominees-list breakthrough-slider">
+              <li class="nominees-list__item winner" data-aos="fade-up" data-aos-delay="100">
+                <div class="nominees-list__img-box ">
+                  <img style="background: black" src="pic/codesandbox.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">CodeSandbox</h5>
+                <p class="nominees-list__link"><a href="https://codesandbox.io">codesandbox.io</a></p>
+                <p class="nominees-list__desc">An online code editor tailored for web applications.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="200">
+                <div class="nominees-list__img-box">
+                  <img src="pic/ink.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Ink</h5>
+                <p class="nominees-list__link"><a href="https://github.com/vadimdemedes/ink">github.com/vadimdemedes/ink</a></p>
+                <p class="nominees-list__desc">React for CLIs. Build and test your CLI output using components.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="nominees-list__img-box ">
+                  <img style="background: black" src="pic/project_dummy.jpg" height="160" width="160" alt="">
+                </div>
+                <h5 class="nominees-list__title">Magic Persistence Layer</h5>
+                <p class="nominees-list__link"><a href="https://github.com/automerge/mpl">github.com/automerge/mpl</a></p>
+                <p class="nominees-list__desc">Magic Persistence Layer is a WebRTC peer-to-peer synchronization system for automerge
+                  documents.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="nominees-list__img-box ">
+                  <img style="background: black" src="pic/project_dummy.jpg" height="160" width="160" alt="">
+                </div>
+                <h5 class="nominees-list__title">React Native binding for iOS ARKit</h5>
+                <p class="nominees-list__link"><a
+                    href="https://github.com/react-native-ar/react-native-arkit">github.com/react-native-ar/react-native-arkit</a>
+                </p>
+              </li>
+            </ul>
+            
+            <div class="section__desc slider-nav-wrap">
+              <div class="slider-nav-wrap__left">
+                <h4 class="section__sub-title" data-aos="fade-left">Fun side project of the year</h4>
+                <p class="section__p" data-aos="fade-in">Fun projects that would make you go "wow", without specific purpose or
+                  logic, but interesting and entertaining.</p>
+              </div>
+            
+              <div class="slider-nav centered" id="fun-project-slider-nav"></div>
+            </div>
+            
+            <ul class="nominees-list fun-project-slider">
+              <li class="nominees-list__item winner" data-aos="fade-up" data-aos-delay="100">
+                <div class="nominees-list__img-box">
+                  <img src="pic/kawaii.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">React Kawaii</h5>
+                <p class="nominees-list__link"><a
+                    href="https://github.com/miukimiu/react-kawaii">github.com/miukimiu/react-kawaii</a></p>
+                <p class="nominees-list__desc">React Kawaii is a library of cute SVG illustrations (react components). Ideal if you
+                  want to give some cuteness and personality to your react application.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="nominees-list__img-box ">
+                  <img style="background: black" src="pic/project_dummy.jpg" height="160" width="160" alt="">
+                </div>
+                <h5 class="nominees-list__title">Home Automation</h5>
+                <p class="nominees-list__link"><a
+                    href="https://github.com/deepsyx/home-automation">github.com/deepsyx/home-automation</a></p>
+                <p class="nominees-list__desc">Raspberry Pi 3 based home automation with NodeJS and React Native.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="200">
+                <div class="nominees-list__img-box">
+                  <img src="pic/react-tetris.jpg" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">React Tetris</h5>
+                <p class="nominees-list__link"><a href="https://chvin.github.io/react-tetris">chvin.github.io/react-tetris</a></p>
+                <p class="nominees-list__desc">Use React, Redux, Immutable to code Tetris.</p>
+              </li>
+            </ul>
+            
+            <div class="section__desc slider-nav-wrap">
+              <div class="slider-nav-wrap__left">
+                <h4 class="section__sub-title" data-aos="fade-left">Most impactful contribution to the community</h4>
+                <p class="section__p" data-aos="fade-in">Most notable impact to the community development and growth.</p>
+              </div>
+            
+              <div class="slider-nav centered" id="impactful-contributor-slider-nav-1"></div>
+            </div>
+            
+            <ul class="nominees-list impactful-contributor-slider">
+              <li class="nominees-list__item winner" data-aos="fade-up" data-aos-delay="100">
+                <div class="nominees-list__img-box">
+                  <img src="pic/project_7.jpg" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Storybook</h5>
+                <p class="nominees-list__link"><a href="https://storybook.js.org/">storybook.js.org</a></p>
+                <p class="nominees-list__desc">Storybook is a development environment for UI components. It allows you to browse a
+                  component library, view the different states of each component, and interactively develop and test components.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="200">
+                <div class="nominees-list__img-box">
+                  <img src="pic/bundlesize.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">bundlesize</h5>
+                <p class="nominees-list__link"><a
+                    href="https://github.com/siddharthkp/bundlesize">github.com/siddharthkp/bundlesize</a></p>
+                <p class="nominees-list__desc">Keep your bundle size in check.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="nominees-list__img-box">
+                  <img src="pic/howtographql.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">How to GraphQL</h5>
+                <p class="nominees-list__link"><a href="https://www.howtographql.com/">howtographql.com</a></p>
+                <p class="nominees-list__desc">How to GraphQL is a fullstack tutorial website to learn all about GraphQL! It was
+                  built by Graphcool and many amazing contributors. All content on the site is completely free and open-source.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="400">
+                <div class="nominees-list__img-box">
+                  <img src="pic/nativebase.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Nativebase</h5>
+                <p class="nominees-list__link"><a href="https://nativebase.io">nativebase.io</a></p>
+                <p class="nominees-list__desc">Essential cross-platform UI components for React Native.</p>
+              </li>
+            </ul>
+            
+            <div class="section__desc slider-nav-wrap">
+              <div class="slider-nav-wrap__left">
+                <h4 class="section__sub-title" data-aos="fade-left">Productivity booster</h4>
+                <p class="section__p" data-aos="fade-in">Project/tool that affected the development productivity like no other
+                  before, making a big difference and deserves to be massively adopted.</p>
+              </div>
+            
+              <div class="slider-nav centered" id="impactful-contributor-slider-nav-2"></div>
+            </div>
+            
+            <ul class="nominees-list impactful-contributor-slider">
+              <li class="nominees-list__item winner" data-aos="fade-up" data-aos-delay="100">
+                <div class="nominees-list__img-box">
+                  <img src="pic/prettier.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Prettier</h5>
+                <p class="nominees-list__link"><a href="https://prettier.io">prettier.io</a></p>
+                <p class="nominees-list__desc">Prettier is an opinionated code formatter. It enforces a consistent style by parsing
+                  your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when
+                  necessary.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="100">
+                <div class="nominees-list__img-box ">
+                  <img style="background: black" src="pic/codesandbox.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">CodeSandbox</h5>
+                <p class="nominees-list__link"><a href="https://codesandbox.io">codesandbox.io</a></p>
+                <p class="nominees-list__desc">An online code editor tailored for web applications.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="200">
+                <div class="nominees-list__img-box">
+                  <img src="pic/parcel.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">Parcel</h5>
+                <p class="nominees-list__link"><a href="https://parceljs.org">parceljs.org</a></p>
+                <p class="nominees-list__desc">Blazing fast, zero configuration web application bundler.</p>
+              </li>
+            
+              <li class="nominees-list__item" data-aos="fade-up" data-aos-delay="400">
+                <div class="nominees-list__img-box">
+                  <img src="pic/lintstaged.png" height="160" width="160" alt="">
+                </div>
+            
+                <h5 class="nominees-list__title">lint-staged</h5>
+                <p class="nominees-list__link"><a href="https://github.com/okonet/lint-staged">github.com/okonet/lint-staged</a></p>
+                <p class="nominees-list__desc">Run linters against staged git files and don't let 💩 slip into your code base!</p>
+              </li>
+            </ul>
+            </div>
+
+            <!-- Start OLD DESIGN -->
+
+            <!-- <ul class="winners">
               <li class="winners__item">
                 <div class="winners__nominee">
                   <h3 class="section__sub-title">Breakthrough of the year</h3>
@@ -316,7 +584,10 @@
                   </div>
                 </div>
               </li>
-            </ul>
+            </ul> -->
+
+            <!-- END OLD DESIGN -->
+
           </div>
         </section>
       </main>
@@ -353,6 +624,9 @@
                 </a>
               </li>
             </ul>
+
+
+           
 
             <form
               class="email-subscription"
