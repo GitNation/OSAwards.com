@@ -29,4 +29,4 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn deploy --user $FTP_USER --password $FTP_PASSWORD
+      - run: ./node_modules/.bin/gulp deploy --user $FTP_USER --password $FTP_PASSWORD

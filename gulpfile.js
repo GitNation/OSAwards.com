@@ -140,7 +140,6 @@ gulp.task('deploy', function() {
         '!./.*',
         '!./node_modules/**/*.*'
     ])
-        .pipe(conn.newer(remotePath))
         .pipe(conn.dest(remotePath));
 });
 
