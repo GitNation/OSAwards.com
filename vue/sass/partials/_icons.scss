@@ -1,0 +1,22 @@
+/* Icons
+-----------------------------------------------------------------------------*/
+
+
+
+.arrow-r{
+	width: 20px;
+	height: 18px;
+	object-fit: contain;
+	fill: $clr-red;
+	margin: auto 0 auto 13px;
+	transition: all linear 0.1s;
+}
+
+.arrow-d{
+	width: 18px;
+	height: 20px;
+	object-fit: contain;
+	fill: $clr-red;
+	margin: auto 0 -4px 13px;
+	transition: all linear 0.1s;
+}

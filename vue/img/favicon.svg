@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0.858" y1="2.5971" x2="31.0597" y2="33.3191" gradientTransform="matrix(1 0 0 -1 0 34)">
+	<stop  offset="0" style="stop-color:#18EA8C"/>
+	<stop  offset="1" style="stop-color:#64FFB5"/>
+</linearGradient>
+<rect class="st0" width="32" height="32"/>
+<path class="st1" d="M26,7c-4,0-8.3-2.1-10-4c-1.7,1.9-6,4-10,4c0,6.1,1.6,22,10,22C24.1,29,26,13.1,26,7z"/>
+<line class="st1" x1="18.1" y1="13" x2="22" y2="13"/>
+<path class="st1" d="M19,21c0,1.6-1,2.9-3,2.9c-1.9,0-3-1.4-3-2.9"/>
+<ellipse class="st1" cx="12.5" cy="13" rx="1.9" ry="2"/>
+</svg>
