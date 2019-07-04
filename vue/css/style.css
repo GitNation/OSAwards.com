@@ -1785,8 +1785,7 @@ https://flickity.metafizzy.co
   /*background: #fc6635;*/
   padding: 10px 0;
   z-index: 5;
-  background: transparent;
-  transition: all linear 0.1s; }
+  background: transparent; }
   .header .container {
     max-width: none;
     min-height: 100px;
@@ -1917,7 +1916,7 @@ https://flickity.metafizzy.co
   left: 50%;
   top: 35px;
   transform: translateX(-50%); }
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1600px) {
     .main-nav {
       display: flex;
       position: relative;
@@ -1955,7 +1954,9 @@ https://flickity.metafizzy.co
     display: block;
     color: #fff;
     padding: 10px;
-    transition: all linear 0.1s; }
+    transition: all linear 0.1s;
+    backface-visibility: hidden;
+    will-change: color; }
     .main-menu__link:hover {
       text-decoration: none; }
   @media only screen and (max-width: 1280px) {
@@ -2055,7 +2056,9 @@ https://flickity.metafizzy.co
       top: 50%;
       transform: translate(-50%, -50%);
       box-shadow: 0 5px 20px 0 rgba(67, 64, 79, 0.2);
-      background-image: linear-gradient(180deg, #fff, #fff); }
+      background-image: linear-gradient(180deg, #fff, #fff);
+      backface-visibility: hidden;
+      will-change: background, box-shadow, width, height; }
     .socials__link:hover {
       text-decoration: none; }
       .socials__link:hover:after {
