@@ -48,7 +48,6 @@ gulp.task('sass', function() {
 
 gulp.task('css', function () {
 	var plugins = [
-		//precss(),
 		autoprefixer({browsers: ['last 2 version']}),
 		cssnano()
 	];
@@ -59,7 +58,7 @@ gulp.task('css', function () {
 		.pipe( rename({suffix: '.min', prefix : ''}) )
 		.pipe( sourcemaps.write('.') )
 		.pipe( gulp.dest('css') )
-		//.pipe( browserSync.reload({stream: true}) );
+		.pipe( browserSync.reload({stream: true}) );
 });
 
 // =============================================================================
@@ -148,13 +147,13 @@ gulp.task('deploy', function() {
 // Watcher
 // =============================================================================
 
-gulp.task('watch', ['sass', 'css'], function() {
+gulp.task('watch', ['sass', 'css', 'browser-sync'], function() {
 	gulp.watch('img/sprite.svg');
 	gulp.watch('**/*.scss', ['sass']);
 	gulp.watch('css/style.css', ['css']);
 	gulp.watch('img/svg/*.svg', ['sprite']);
-	//gulp.watch('js/*.js', browserSync.reload);
-	//gulp.watch('*.html', browserSync.reload);
+	gulp.watch('js/*.js', browserSync.reload);
+	gulp.watch('*.html', browserSync.reload);
 });
 
 gulp.task('build', ['sass', 'css', 'sprite']);
