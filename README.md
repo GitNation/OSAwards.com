@@ -5,6 +5,7 @@ Set of independent pages (landing and sub-pages per each award), powering https:
 * `/react` - React OS Awards
 * `/javascript` - JS OS Awards
 * `/vue` - Vue OS Awards
+* `/reactnative` - React Native OS Awards
 
 Each sub-site is a static website, with no templating and few gulp scripts to build SASS, sprites, run dev server and perform FTP deploy.
 

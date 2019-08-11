@@ -1,0 +1,53 @@
+/* Buttons
+-----------------------------------------------------------------------------*/
+
+.basic-btn{
+	position: relative;
+	font-family: Lato;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.43;
+	color: #ffffff;
+	height: 50px;
+	border-radius: 3px;
+	padding: 0 20px;
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	text-transform: uppercase;
+	transition: all linear 0.1s;
+	//background-image: linear-gradient(284deg, #00dc3a, #00dc3a);
+	background:#EA4E51;
+	box-shadow: 0 25px 25px -10px rgba(234, 78, 81, 0.6);
+	justify-content: center;
+	text-align: center;
+	z-index: 1;
+
+	&:hover{
+		text-decoration: none;
+		//color: #fff;
+		//box-shadow: 0 25px 25px -10px rgba(67,64,79,.25);
+		/*background: transparent;*/
+		transform:translateY(-3px);
+		box-shadow: 0 35px 30px -10px rgba(234, 78, 81, 0.8);
+
+		&:after{
+			opacity: 1;
+		}
+	}
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 3px;
+		z-index: -1;
+		opacity: 0;
+		transition: all linear 0.1s;
+		background-image: linear-gradient(284deg, $clr-red, $clr-red);
+		//background: #43404f;
+	}
+}
