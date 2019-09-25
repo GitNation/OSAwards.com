@@ -2586,12 +2586,14 @@ https://flickity.metafizzy.co
       .nominees-list__item:hover .nominees-list__desc {
         color: #35495E; }
   .nominees-list__img-box {
-    width: 80px;
+    width: 140px;
     height: 80px;
-    margin: 40px auto; }
+    margin: 0 auto;
+    margin-bottom: 30px; }
     .nominees-list__img-box img {
+      object-fit: contain;
       width: 100%;
-      height: auto; }
+      height: 100%; }
   .nominees-list__title {
     font-size: 20px;
     line-height: 1;
