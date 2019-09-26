@@ -710,13 +710,15 @@
 	}
 
 	&__img-box{
-		width: 80px;
+		width: 140px;
 		height: 80px;
-		margin: 40px auto;
+		margin: 0 auto;
+		margin-bottom: 30px;
 
 		img{
+			object-fit: contain;
 			width: 100%;
-			height: auto;
+			height: 100%;
 		}
 	}
 
