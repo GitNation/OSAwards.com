@@ -660,12 +660,13 @@
 }
 
 .nominees-list{
-	padding: 0;
+	//padding: 0;
 	margin: 40px -75px 0;
+	padding:0 2%;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-
+	justify-content: center;
 
 	&__item{
 		width: 340px;
@@ -674,12 +675,14 @@
 		box-sizing: border-box;
 		border: solid 1px transparent;
 		text-align: center;
-		margin: 0 20px 80px;
+		//margin: 0 20px 80px;
+		margin: 0 2% 80px;
 		height: 100%;
 		padding: 40px;
 		min-height: 350px;
 		transition: all linear 0.1s;
 		position:relative;
+		max-width: 16%;
 
 		&:before {
 			content:'';
@@ -780,18 +783,19 @@
 		transition: all linear 0.1s;
 	}
 
-
-
 	@media only screen and (max-width : 1360px) {
 		margin: 40px 0 0;
 
 		&__item{
 			margin-bottom:  40px;
+			max-width: 29.333%;
 		}
 	}
 
 	@media only screen and (max-width : 860px) {
-
+		&__item{
+			margin-bottom:  40px;
+		}
 	}
 
 	@media only screen and (max-width : 680px) {
@@ -805,9 +809,11 @@
 
 		&__item{
 			width: 220px;
-			margin: 0 10px 80px;
+			//margin: 0 10px 80px;
+			margin-bottom:80px;
 			border-color: $clr-white;
 			box-shadow: 0 50px 40px -10px rgba(67, 64, 79, 0.2);
+			max-width: 46%;
 		}
 		.slick-dots {
 			visibility:visible;
