@@ -2550,11 +2550,12 @@ https://flickity.metafizzy.co
         visibility: visible; } }
 
 .nominees-list {
-  padding: 0;
   margin: 40px -75px 0;
+  padding: 0 2%;
   list-style: none;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .nominees-list__item {
     width: 340px;
     background: #fff;
@@ -2562,12 +2563,13 @@ https://flickity.metafizzy.co
     box-sizing: border-box;
     border: solid 1px transparent;
     text-align: center;
-    margin: 0 20px 80px;
+    margin: 0 2% 80px;
     height: 100%;
     padding: 40px;
     min-height: 350px;
     transition: all linear 0.1s;
-    position: relative; }
+    position: relative;
+    max-width: 16%; }
     .nominees-list__item:before {
       content: '';
       position: absolute;
@@ -2624,7 +2626,11 @@ https://flickity.metafizzy.co
     .nominees-list {
       margin: 40px 0 0; }
       .nominees-list__item {
-        margin-bottom: 40px; } }
+        margin-bottom: 40px;
+        max-width: 29.333%; } }
+  @media only screen and (max-width: 860px) {
+    .nominees-list__item {
+      margin-bottom: 40px; } }
   @media only screen and (max-width: 680px) {
     .nominees-list {
       margin: 40px -20px 0;
@@ -2634,9 +2640,10 @@ https://flickity.metafizzy.co
         line-height: 1.5; }
       .nominees-list__item {
         width: 220px;
-        margin: 0 10px 80px;
+        margin-bottom: 80px;
         border-color: #f2f2f2;
-        box-shadow: 0 50px 40px -10px rgba(67, 64, 79, 0.2); }
+        box-shadow: 0 50px 40px -10px rgba(67, 64, 79, 0.2);
+        max-width: 46%; }
       .nominees-list .slick-dots {
         visibility: visible; } }
 

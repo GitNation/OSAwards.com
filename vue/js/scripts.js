@@ -227,7 +227,7 @@ $(function() {
 
 	// Sliders
 
-    $('.technology-slider').slick({
+    /*$('.technology-slider').slick({
         dots: false,
         infinite: false,
         speed: 500,
@@ -268,9 +268,9 @@ $(function() {
                 }
             },
         ]
-    });
+    });*/
 
-	$('.breakthrough-slider').slick({
+	/*$('.breakthrough-slider').slick({
 		dots: false,
 		infinite: false,
 		speed: 500,
@@ -311,9 +311,9 @@ $(function() {
 				}
 			},
 		]
-	});
+	});*/
 
-	$('.fun-project-slider').slick({
+	/*$('.fun-project-slider').slick({
 		dots: false,
 		infinite: false,
 		speed: 500,
@@ -354,9 +354,9 @@ $(function() {
 				}
 			},
 		]
-	});
+	});*/
 
-	$('.impactful-contributor-slider').each(function(i){
+	/*$('.impactful-contributor-slider').each(function(i){
 		$(this).slick({
 			dots: false,
 			infinite: false,
@@ -399,7 +399,7 @@ $(function() {
 				},
 			]
 		});
-	})
+	})*/
 
 	$('.participants-heads').slick({
 		slidesToShow: 5,
