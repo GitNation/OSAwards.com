@@ -2533,8 +2533,9 @@ https://flickity.metafizzy.co
   padding: 0 2%;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  /* Changed flex-wrap to nowrap to fit more than 5 nominees. added wrap @media*/
+  flex-wrap: nowrap; 
+  justify-content: space-around; }
   .nominees-list__item {
     width: 340px;
     background: #fff;
@@ -2543,7 +2544,7 @@ https://flickity.metafizzy.co
     border: solid 1px transparent;
     text-align: center;
     margin: 0 2% 80px;
-    height: 100%;
+    /* height: 100%; Creating problems in Mobile view*/
     padding: 40px;
     min-height: 350px;
     transition: all linear 0.1s;
@@ -2601,17 +2602,20 @@ https://flickity.metafizzy.co
     transition: all linear 0.1s; }
   @media only screen and (max-width: 1360px) {
     .nominees-list {
-      margin: 40px 0 0; }
+      margin: 40px 0 0;
+      flex-wrap: wrap; }
       .nominees-list__item {
         margin-bottom: 40px;
         max-width: 29.333%; } }
   @media only screen and (max-width: 860px) {
     .nominees-list__item {
-      margin-bottom: 40px; } }
+      margin-bottom: 40px;
+      flex-wrap: wrap;} }
   @media only screen and (max-width: 680px) {
     .nominees-list {
       margin: 40px -20px 0;
-      padding-top: 20px; }
+      padding-top: 20px;
+      flex-wrap: wrap; }
       .nominees-list__desc {
         font-size: 10px;
         line-height: 1.5; }
