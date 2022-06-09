@@ -32,4 +32,4 @@ npm run build
 
 Open `index.html` to test.
 
-Built files should be comited to repo, as deploy is a simple FTP upload of all repo contents.
+Built files should be committed to repo, as deploy is a simple FTP upload of all repo contents.
