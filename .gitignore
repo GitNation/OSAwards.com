@@ -31,3 +31,6 @@ _tmp
 node_modules
 bower_components
 build
+
+# Local Netlify folder
+.netlify
