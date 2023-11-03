@@ -26,5 +26,8 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "author": "GitNation",
-  "description": ""
+  "description": "",
+  "volta": {
+    "node": "10.24.1"
+  }
 }
