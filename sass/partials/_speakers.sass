@@ -1,0 +1,66 @@
+.sec-mcs
+   padding: 60px 0
+   +sm
+      padding: 40px 0
+   .section__title
+      margin: 0
+
+.speakers-list
+   display: grid
+   gap: 34px 20px
+   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr))
+   +xs
+      gap: 24px 12px
+      grid-template-columns: repeat(auto-fill, minmax(188px, 1fr))
+.speaker
+   position: relative
+   color: $clr-red
+   padding: 16px
+   border-radius: 24px
+   border: 1px solid $clr-red
+   +xs
+      padding: 10px
+      border-radius: 12px
+
+   &__photo
+      position: relative
+      margin-bottom: 10px
+      img
+         width: 100%
+         display: block
+         height: auto
+         object-fit: cover
+         border-radius: 8px
+   &__name
+      font-weight: 900
+      font-size: 24px
+      letter-spacing: -0.24px
+      +xs
+         font-size: 20px
+   &__company, &__desc
+      font-weight: 500
+      font-size: 16px
+      letter-spacing: -0.16px
+
+   &__socials
+      margin: 20px 0
+      display: flex
+      flex-wrap: wrap
+      gap: 4px
+      &-link
+         width: 28px
+         height: 28px
+         display: flex
+         align-items: center
+         justify-content: center
+
+         .icon
+            font-size: 20px
+            height: 1em
+            width: 1em
+            display: block
+            fill: currentColor
+
+   &__desc
+      margin-top: 20px
+      +ellipsis(6)

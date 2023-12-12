@@ -1,0 +1,228 @@
+.tiles
+   padding: 100px 0 60px 0
+   color: #000
+   position: relative
+
+   .container
+      padding-top: 0
+      max-width: none
+
+   p
+      margin: 0 0 1em
+
+   .item
+      &:last-child
+         .tile:after
+            display: none
+
+   .tile
+      font-size: 12px
+      line-height: 1.67
+      text-align: center
+      position: relative
+      padding: 30px 20px
+
+      &:after
+         content: ""
+         position: absolute
+         left: 50%
+         top: 100%
+         height: 1px
+         background: #f5f5f5
+         transform: translateX(-50%)
+         width: 160px
+
+   h4
+      font-size: inherit
+      font-weight: 800
+      text-transform: uppercase
+      margin: 0 0 1em
+
+   a
+      font-size: 14px
+
+   .image
+      position: relative
+      height: 60px
+      margin-bottom: 20px
+
+      img
+         position: absolute
+         left: 50%
+         top: 50%
+         margin: 0
+         transform: translate(-50%, -50%)
+         max-width: 85px
+         max-height: 100%
+
+   .title
+      font-size: 18px
+      text-transform: uppercase
+      color: #35333f
+      font-weight: 700
+      opacity: 0.2
+
+   .tile_content
+      background-image: linear-gradient(68deg, #fd5426, #f88c55)
+      color: #fff
+      display: none
+      margin: 0 -20px
+      padding: 20px 0
+      position: relative
+      text-align: center
+
+   img
+      margin: 20px auto
+      max-width: 150px
+
+   h3
+      font-size: inherit
+      font-weight: 800
+      margin: 0 0 1em
+      text-transform: uppercase
+
+   a
+      color: inherit
+      font-size: 14px
+
+   .inner
+      font-size: 12px
+      line-height: 1.5
+
+   +rmin(768)
+      font-size: 0
+      padding: 0
+
+      a:hover
+         text-decoration: underline
+
+      .container
+         padding: 0
+         position: static
+
+      .item
+         width: 20%
+         display: inline-block
+         vertical-align: top
+         box-sizing: border-box
+         font-size: 0
+
+         &:before
+            content: ""
+            display: inline-block
+            vertical-align: middle
+            min-height: 33vh
+            width: 1px
+
+         &:hover
+            .js_trigger:before
+               opacity: 1
+            //transform:translateY(0);
+
+            .tile_content
+               opacity: 1
+               visibility: visible
+               transform: translateY(0)
+               pointer-events: all
+
+         &:nth-child(2)
+            .tile:before
+               background-position: 50% 50%, 20% 0
+
+         &:nth-child(3)
+            .tile:before
+               background-position: 50% 50%, 40% 0
+
+         &:nth-child(4)
+            .tile:before
+               background-position: 50% 50%, 60% 0
+
+         &:nth-child(5)
+            .tile:before
+               background-position: 50% 50%, 80% 0
+
+      .tile
+         padding: 20px
+         display: inline-block !important
+         vertical-align: middle
+         width: 100%
+         box-sizing: border-box
+         margin-left: -1px
+
+         a
+            font-size: 12px
+
+         &:after
+            left: 100%
+            top: 50%
+            width: 1px
+            height: 160px
+            transform: translateY(-50%)
+
+         &:before
+            content: ""
+            position: absolute
+            left: 0
+            right: 0
+            top: 50%
+            background-image: url(../img/svg/icon-next.svg), linear-gradient(90deg, #fd5426, #f88c55)
+            background-repeat: no-repeat
+            background-size: 31px 36px, 500% 200%
+            background-position: 50% 50%, 0 0
+            z-index: 20
+            opacity: 0
+            transition: all 0.2s
+            transform: translateY(-50%)
+            cursor: pointer
+            height: 100%
+            min-height: 34vh
+
+      .title
+         padding-top: 20px
+
+      .tile_content
+         display: block !important
+         position: absolute
+         left: 0
+         right: 0
+         bottom: 100%
+         height: 67vh
+         box-sizing: border-box
+         font-size: 0
+         margin: 0
+         opacity: 0
+         visibility: hidden
+         transition: all 0.4s
+         transform: translateY(-5%)
+         pointer-events: none
+
+         &:before
+            content: ""
+            display: inline-block
+            vertical-align: middle
+            height: 100%
+
+         .inner
+            display: inline-block
+            vertical-align: middle
+            margin-left: -1px
+            font-size: 16px
+            line-height: 1.56
+            max-width: 720px
+
+         h3
+            font-size: 32px
+
+         a
+            font-size: 16px
+
+         img
+            width: 100%
+
+   +rmin(1280)
+      .tile
+         padding-top: 40px
+         padding-bottom: 40px
+
+         a
+            font-size: 14px

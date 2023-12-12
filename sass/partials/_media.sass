@@ -1,0 +1,31 @@
+=r($width)
+   @media only screen and (max-width: $width + "px")
+      @content
+
+=rmin($width)
+   @media only screen and (min-width: $width+ "px")
+      @content
+
+=laptop
+   +r(1440)
+      @content
+
+=tablet
+   +r(1200)
+      @content
+
+=md
+   +r(1024)
+      @content
+
+=sm
+   +r(767)
+      @content
+
+=xs
+   +r(599)
+      @content
+
+=xxs
+   +r(480)
+      @content
