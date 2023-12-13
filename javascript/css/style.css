@@ -432,7 +432,7 @@ body {
 
 a {
   color: #F2DF44;
-  transition: all linear .1s;
+  transition: all linear 0.1s;
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
@@ -458,10 +458,10 @@ a {
 
 .wrapper {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   min-height: 100%;
   min-width: 300px;
-  transition: all .9s; }
+  transition: all 0.9s; }
 
 .container {
   max-width: 1260px;
@@ -2187,7 +2187,7 @@ https://flickity.metafizzy.co
       color: #43404F; } }
 
 .intro {
-  color: #35333F;
+  color: #35333f;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -2199,7 +2199,7 @@ https://flickity.metafizzy.co
     min-height: 67vh;
     display: flex;
     background-image: linear-gradient(240deg, #FFEF74, #F2DF44);
-    transition: all .4s; }
+    transition: all 0.4s; }
   .intro__info {
     display: flex;
     flex-direction: column;
@@ -2370,7 +2370,7 @@ https://flickity.metafizzy.co
   margin: 0 0 100px;
   padding: 120px 0 0; }
   .ceremony:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 120px;
     left: 50%;
@@ -2550,7 +2550,7 @@ https://flickity.metafizzy.co
     position: relative;
     max-width: 16%; }
     .nominees-list__item:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 20px;
       right: 20px;
@@ -2767,7 +2767,7 @@ https://flickity.metafizzy.co
     overflow: hidden;
     margin: 0 -20px; }
     .participants-list__head:after {
-      content: '';
+      content: "";
       width: 260px;
       height: 260px;
       position: absolute;
@@ -2921,16 +2921,20 @@ https://flickity.metafizzy.co
   background-image: linear-gradient(240deg, #ffef74, #f1dd3f);
   color: #35333f; }
   .archive-menu__mobile {
-    display: none; }
+    display: none;
+    position: sticky;
+    top: 60px;
+    z-index: 10; }
     .archive-menu__mobile .archive-list {
       display: block;
       font-size: 0;
+      background: #fff;
       border-bottom: 1px solid #f2f2f2; }
     .archive-menu__mobile .archive-list__item {
       margin: 0;
       display: block; }
       .archive-menu__mobile .archive-list__item:before {
-        content: '';
+        content: "";
         display: inline-block;
         vertical-align: middle;
         min-height: 76px;
@@ -2941,7 +2945,7 @@ https://flickity.metafizzy.co
         height: 3px; }
       .archive-menu__mobile .archive-list__item .archive-list__link {
         color: #35333f;
-        opacity: .4;
+        opacity: 0.4;
         font-weight: 400;
         padding: 10px;
         display: inline-block;
@@ -2952,7 +2956,7 @@ https://flickity.metafizzy.co
         .archive-menu__mobile .archive-list__item .archive-list__link:hover {
           color: #35333f;
           font-size: 20px;
-          opacity: .4; }
+          opacity: 0.4; }
       .archive-menu__mobile .archive-list__item:hover:after {
         opacity: 0; }
       .archive-menu__mobile .archive-list__item.active .archive-list__link {
@@ -3037,7 +3041,7 @@ https://flickity.metafizzy.co
     .archive-list__item:hover:after {
       opacity: 1; }
     .archive-list__item:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: -4px;
