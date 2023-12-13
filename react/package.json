@@ -27,6 +27,9 @@
     "precss": "^1.4.0",
     "vinyl-ftp": "^0.5.0"
   },
+  "resolutions": {
+    "graceful-fs": "^4.2.11"
+  },
   "main": "gulpfile.js",
   "dependencies": {},
   "author": "",
