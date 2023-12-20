@@ -3242,13 +3242,7 @@ https://flickity.metafizzy.co
         display: block;
         fill: currentColor; }
   .speaker__desc {
-    margin-top: 20px;
-    overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical; }
+    margin-top: 20px; }
 
 .tiles {
   padding: 100px 0 60px 0;
