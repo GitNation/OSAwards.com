@@ -3242,7 +3242,8 @@ https://flickity.metafizzy.co
         display: block;
         fill: currentColor; }
   .speaker__desc {
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 12px; }
 
 .tiles {
   padding: 100px 0 60px 0;
