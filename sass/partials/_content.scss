@@ -152,6 +152,9 @@
     font-size: 24px;
     line-height: 1.25;
     margin: 0;
+    a {
+      text-decoration: underline;
+    }
   }
 
   &__img-wrap {
@@ -255,15 +258,15 @@
       }
     }
   }
-
+  @media only screen and (max-width: 768px) {
+    &__wrap {
+      min-height: 0;
+    }
+  }
   @media only screen and (max-width: 680px) {
     margin: 0;
     padding-bottom: 0;
     height: auto;
-
-    &__wrap {
-      min-height: 0;
-    }
 
     &__info {
       max-width: none;
@@ -374,6 +377,10 @@
 
     a {
       color: #fff;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     small {
@@ -436,10 +443,6 @@
 
     .intro__info {
       margin: 0;
-
-      .intro__img-wrap {
-        bottom: 120px;
-      }
     }
   }
   @media (min-width: 1024px) {
@@ -472,10 +475,6 @@
     }
     .intro__text {
       padding-bottom: 0;
-    }
-    .intro__text p,
-    .intro__text hr {
-      //margin-bottom: 1em;
     }
   }
 }

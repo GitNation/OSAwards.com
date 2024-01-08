@@ -2234,6 +2234,8 @@ https://flickity.metafizzy.co
     font-size: 24px;
     line-height: 1.25;
     margin: 0; }
+    .intro__desc a {
+      text-decoration: underline; }
   .intro__img-wrap {
     max-width: 46%;
     width: 496px;
@@ -2298,13 +2300,14 @@ https://flickity.metafizzy.co
       padding: 120px 50px 0; }
     .intro__scroll-wrap div.container {
       padding: 0; } }
+  @media only screen and (max-width: 768px) {
+    .intro__wrap {
+      min-height: 0; } }
   @media only screen and (max-width: 680px) {
     .intro {
       margin: 0;
       padding-bottom: 0;
       height: auto; }
-      .intro__wrap {
-        min-height: 0; }
       .intro__info {
         max-width: none; }
       .intro__title {
@@ -2377,7 +2380,10 @@ https://flickity.metafizzy.co
       border: none;
       border-top: 2px solid #fff; }
     .intro_slider .intro__text a {
-      color: #fff; }
+      color: #fff;
+      text-decoration: underline; }
+      .intro_slider .intro__text a:hover {
+        text-decoration: none; }
     .intro_slider .intro__text small {
       font-size: inherit; }
   .intro_slider .intro__info {
@@ -2414,9 +2420,7 @@ https://flickity.metafizzy.co
       .intro_slider .intro__text small {
         font-size: 14px; }
     .intro_slider .intro__info {
-      margin: 0; }
-      .intro_slider .intro__info .intro__img-wrap {
-        bottom: 120px; } }
+      margin: 0; } }
   @media (min-width: 1024px) {
     .intro_slider .intro__title {
       font-size: 56px;
