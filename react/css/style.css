@@ -1490,13 +1490,12 @@ https://flickity.metafizzy.co
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 65px 0 0;
+  margin: 35px 0 0;
   max-width: 620px; }
   .project-submit__desc {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.58;
-    margin: 65px 0 10px;
     margin: 0 0 10px; }
   .project-submit__succesful {
     font-size: 32px;
@@ -1510,6 +1509,13 @@ https://flickity.metafizzy.co
       transition: all 1s;
       opacity: 0;
       display: inline-block; }
+  .project-submit__requirements {
+    font-size: 20px;
+    line-height: 1.4; }
+    .project-submit__requirements p {
+      margin-top: 0; }
+    .project-submit__requirements ul {
+      font-size: 16px; }
   .project-submit__input-wrap {
     position: relative;
     border-radius: 3px;
@@ -1518,7 +1524,7 @@ https://flickity.metafizzy.co
     margin: 0 0 40px;
     box-shadow: 0 30px 25px -10px rgba(0, 220, 58, 0.2); }
     .project-submit__input-wrap:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -1606,7 +1612,7 @@ https://flickity.metafizzy.co
       pointer-events: none;
       background-color: #ccc; }
     .project-submit__preloader:after, .project-submit__submit:after, .project-submit__reset:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -1663,7 +1669,8 @@ https://flickity.metafizzy.co
     opacity: 0; }
   .project-submit.incorrect .icon-error {
     opacity: 1; }
-  .project-submit.submitting .project-submit__submit, .project-submit.submitting .project-submit__reset {
+  .project-submit.submitting .project-submit__submit,
+  .project-submit.submitting .project-submit__reset {
     display: none; }
   .project-submit.submitting .project-submit__preloader {
     display: block; }
@@ -1684,7 +1691,6 @@ https://flickity.metafizzy.co
       opacity: 1; }
   @media only screen and (max-width: 1380px) {
     .project-submit {
-      margin: 70px 0 0;
       /*margin: 4.68vw 0 0;
 
 		&__desc{
@@ -1697,7 +1703,7 @@ https://flickity.metafizzy.co
       width: 100%; }
       .project-submit__desc {
         font-size: 26px; } }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 767px) {
     .project-submit {
       width: 100%;
       margin: 0 0 0; }
@@ -1761,7 +1767,7 @@ https://flickity.metafizzy.co
       .email-subscription__submit:hover:after {
         opacity: 1; }
     .email-subscription__submit:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -2202,7 +2208,6 @@ https://flickity.metafizzy.co
   height: 100vh;
   min-height: 600px; }
   .intro__wrap {
-    min-height: 67vh;
     display: flex;
     background: #00dc3a;
     transition: all 0.4s; }
@@ -2217,7 +2222,7 @@ https://flickity.metafizzy.co
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    margin: 40px 0 26px; }
+    margin: 20px 0 26px; }
   .intro__desc {
     font-size: 24px;
     line-height: 1.25;
@@ -2307,13 +2312,13 @@ https://flickity.metafizzy.co
       font-size: 18px; }
     .intro__img-wrap {
       right: 0;
-      width: 43vw;
+      width: 34vw;
       bottom: -10vw; }
     .intro .container {
       padding: 120px 50px 0; }
     .intro__scroll-wrap div.container {
       padding: 0; } }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 767px) {
     .intro {
       margin: 0;
       padding-bottom: 0;
@@ -2346,8 +2351,6 @@ https://flickity.metafizzy.co
       .intro .container {
         padding: 69px 20px 0; } }
   @media only screen and (max-height: 768px) {
-    .intro__wrap {
-      min-height: 75vh; }
     .intro__title {
       font-size: 40px;
       margin-top: 20px; }
@@ -2366,7 +2369,7 @@ https://flickity.metafizzy.co
       bottom: auto;
       top: 50%;
       transform: translateY(-20%); } }
-  @media (max-width: 680px) and (max-height: 768px) {
+  @media (max-width: 767px) and (max-height: 768px) {
     .intro__img-wrap {
       width: 214px;
       bottom: auto;

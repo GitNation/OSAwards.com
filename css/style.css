@@ -1510,6 +1510,11 @@ https://flickity.metafizzy.co
       transition: all 1s;
       opacity: 0;
       display: inline-block; }
+  .project-submit__requirements {
+    font-size: 24px;
+    line-height: 1.25; }
+    .project-submit__requirements ul {
+      font-size: 20px; }
   .project-submit__input-wrap {
     position: relative;
     border-radius: 3px;
@@ -1518,7 +1523,7 @@ https://flickity.metafizzy.co
     margin: 0 0 40px;
     box-shadow: 0 30px 25px -10px rgba(67, 64, 79, 0.2); }
     .project-submit__input-wrap:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -1606,7 +1611,7 @@ https://flickity.metafizzy.co
       pointer-events: none;
       background-color: #ccc; }
     .project-submit__submit:after, .project-submit__reset:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
@@ -1747,7 +1752,7 @@ https://flickity.metafizzy.co
       .email-subscription__submit:hover:after {
         opacity: 1; }
     .email-subscription__submit:after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
