@@ -2547,26 +2547,13 @@ https://flickity.metafizzy.co
     text-align: center;
     margin: 0 2% 80px;
     height: 100%;
-    padding: 40px;
-    min-height: 350px;
+    padding: 0 20px;
     transition: all linear 0.1s;
     position: relative;
     max-width: 16%; }
-    .nominees-list__item:before {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      bottom: 20px;
-      left: 20px;
-      opacity: 0;
-      transition: all linear 0.1s;
-      pointer-events: none; }
     .nominees-list__item:hover {
       border-color: #f2f2f2;
       box-shadow: 0 20px 20px -10px rgba(67, 64, 79, 0.15); }
-      .nominees-list__item:hover:before {
-        opacity: 1; }
       .nominees-list__item:hover .nominees-list__desc {
         color: #43404F; }
   .nominees-list__img-box {
@@ -2581,8 +2568,6 @@ https://flickity.metafizzy.co
     line-height: 1;
     color: #43404F;
     margin: 0 0 10px; }
-  .nominees-list-highlighted .nominees-list__item:hover:before {
-    display: none; }
   .nominees-list__link {
     color: #F2DF44;
     font-size: 14px;

@@ -2556,7 +2556,6 @@ https://flickity.metafizzy.co
     margin: 0 2% 80px;
     height: 100%;
     padding: 0 20px;
-    min-height: 350px;
     transition: all linear 0.1s;
     max-width: 16%; }
     .nominees-list__item:hover {

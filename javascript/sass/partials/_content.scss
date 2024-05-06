@@ -632,32 +632,14 @@
     //margin: 0 20px 80px;
     margin: 0 2% 80px;
     height: 100%;
-    padding: 40px;
-    min-height: 350px;
+    padding: 0 20px;
     transition: all linear 0.1s;
     position: relative;
     max-width: 16%;
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      bottom: 20px;
-      left: 20px;
-      //border:1px solid #fdd820;
-      opacity: 0;
-      transition: all linear 0.1s;
-      pointer-events: none;
-    }
-
     &:hover {
       border-color: #f2f2f2;
       box-shadow: 0 20px 20px -10px rgba(67, 64, 79, 0.15);
-
-      &:before {
-        opacity: 1;
-      }
 
       .nominees-list__desc {
         color: $clr-black;
@@ -681,30 +663,6 @@
     line-height: 1;
     color: $clr-black;
     margin: 0 0 10px;
-  }
-
-  &-highlighted {
-    .nominees-list__link {
-      //color:#fd5426;
-
-      a {
-        //color:#fd5426;
-
-        &:hover {
-          //color: #fd5426;
-        }
-      }
-    }
-
-    .nominees-list__item {
-      &:hover {
-        //border-color:transparent;
-        //box-shadow:none;
-        &:before {
-          display: none;
-        }
-      }
-    }
   }
 
   &__link {
