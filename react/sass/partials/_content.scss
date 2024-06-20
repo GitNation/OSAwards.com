@@ -609,30 +609,28 @@
 
 .nominees-list {
   //padding: 0;
-  margin: 40px -75px 0;
-  padding: 0 2%;
+  margin: 30px 0 50px;
+  padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 60px 30px;
   justify-content: center;
 
   &__item {
-    width: 340px;
     background: #fff;
     border-radius: 1px;
     box-sizing: border-box;
     border: solid 1px transparent;
     text-align: center;
-    //margin: 0 20px 80px;
-    margin: 0 2% 80px;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 20px 30px;
     transition: all linear 0.1s;
-    max-width: 16%;
+    position: relative;
 
     &:hover {
-      border-color: $clr-white;
-      box-shadow: 0 50px 40px -10px rgba(67, 64, 79, 0.2);
+      border-color: #f2f2f2;
+      box-shadow: 0 20px 20px -10px rgba(67, 64, 79, 0.15);
 
       .nominees-list__desc {
         color: $clr-black;
@@ -644,9 +642,13 @@
     width: 80px;
     height: 80px;
     margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
-      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
       height: auto;
     }
   }
@@ -659,62 +661,42 @@
   }
 
   &__link {
-    color: $clr-orange;
+    color: $clr-red;
     font-size: 14px;
     line-height: 1.43;
-    margin: 10px 0 20px;
+    margin: 10px 0 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 
     a {
+      color: $clr-red;
       text-decoration: none;
 
       &:hover {
-        color: $clr-orange;
+        color: $clr-red;
       }
     }
   }
 
   &__desc {
-    margin: 20px 0 10px;
+    margin: 10px 0 0;
     font-size: 14px;
     line-height: 1.43;
     color: $clr-gray;
     transition: all linear 0.1s;
   }
 
-  @media only screen and (max-width: 1360px) {
-    margin: 40px 0 0;
-
-    &__item {
-      margin-bottom: 40px;
-      max-width: 29.333%;
-    }
-  }
-
-  @media only screen and (max-width: 860px) {
-    &__item {
-      margin-bottom: 40px;
-    }
-  }
-
   @media only screen and (max-width: 680px) {
-    margin: 40px -20px 0;
-    padding-top: 20px;
-
+    gap: 30px 20px;
     &__desc {
       font-size: 10px;
       line-height: 1.5;
     }
 
     &__item {
-      width: 220px;
-      //margin: 0 10px 80px;
-      margin-bottom: 80px;
       border-color: $clr-white;
-      box-shadow: 0 50px 40px -10px rgba(67, 64, 79, 0.2);
-      max-width: 46%;
+      box-shadow: none;
     }
     .slick-dots {
       visibility: visible;

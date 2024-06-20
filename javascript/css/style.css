@@ -2125,7 +2125,7 @@ https://flickity.metafizzy.co
   background-image: url("../img/winner.png") !important;
   background-repeat: no-repeat !important;
   background-size: 200px auto !important;
-  background-position: 50% 60px !important; }
+  background-position: 50% 20px !important; }
 
 .content {
   min-height: 1500px;
@@ -2532,25 +2532,23 @@ https://flickity.metafizzy.co
         visibility: visible; } }
 
 .nominees-list {
-  margin: 40px -75px 0;
-  padding: 0 2%;
+  margin: 30px 0 50px;
+  padding: 0;
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 60px 30px;
   justify-content: center; }
   .nominees-list__item {
-    width: 340px;
     background: #fff;
     border-radius: 1px;
     box-sizing: border-box;
     border: solid 1px transparent;
     text-align: center;
-    margin: 0 2% 80px;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 20px 30px;
     transition: all linear 0.1s;
-    position: relative;
-    max-width: 16%; }
+    position: relative; }
     .nominees-list__item:hover {
       border-color: #f2f2f2;
       box-shadow: 0 20px 20px -10px rgba(67, 64, 79, 0.15); }
@@ -2559,9 +2557,13 @@ https://flickity.metafizzy.co
   .nominees-list__img-box {
     width: 80px;
     height: 80px;
-    margin: 40px auto; }
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .nominees-list__img-box img {
-      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
       height: auto; }
   .nominees-list__title {
     font-size: 20px;
@@ -2572,7 +2574,7 @@ https://flickity.metafizzy.co
     color: #F2DF44;
     font-size: 14px;
     line-height: 1.43;
-    margin: 10px 0 20px;
+    margin: 10px 0 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
@@ -2582,33 +2584,20 @@ https://flickity.metafizzy.co
       .nominees-list__link a:hover {
         color: #F2DF44; }
   .nominees-list__desc {
-    margin: 20px 0 10px;
+    margin: 10px 0 0;
     font-size: 14px;
     line-height: 1.43;
     color: #918f99;
     transition: all linear 0.1s; }
-  @media only screen and (max-width: 1360px) {
-    .nominees-list {
-      margin: 40px 0 0; }
-      .nominees-list__item {
-        margin-bottom: 40px;
-        max-width: 29.333%; } }
-  @media only screen and (max-width: 860px) {
-    .nominees-list__item {
-      margin-bottom: 40px; } }
   @media only screen and (max-width: 680px) {
     .nominees-list {
-      margin: 40px -20px 0;
-      padding-top: 20px; }
+      gap: 30px 20px; }
       .nominees-list__desc {
         font-size: 10px;
         line-height: 1.5; }
       .nominees-list__item {
-        width: 220px;
-        margin-bottom: 80px;
         border-color: #f2f2f2;
-        box-shadow: 0 50px 40px -10px rgba(67, 64, 79, 0.2);
-        max-width: 46%; }
+        box-shadow: none; }
       .nominees-list .slick-dots {
         visibility: visible; } }
 
