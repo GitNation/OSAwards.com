@@ -3,15 +3,15 @@ var autoprefixer = require("autoprefixer"),
   browserSync = require("browser-sync"),
   cssnano = require("cssnano"),
   gulp = require("gulp"),
-  gutil = require("gulp-util"),
-  sass = require("gulp-sass"),
+  log = require("fancy-log"),
+  sass = require("gulp-sass")(require("sass")),
   sourcemaps = require("gulp-sourcemaps"),
   size = require("gulp-size"),
   postcss = require("gulp-postcss"),
   wait = require("gulp-wait"),
   rename = require("gulp-rename"),
   svgSprite = require("gulp-svg-sprite"),
-  cssnext = require("postcss-cssnext"),
+  postcssPresetEnv = require("postcss-preset-env"),
   precss = require("precss"),
   ftp = require("vinyl-ftp"),
   minimist = require("minimist");
@@ -24,8 +24,7 @@ var args = minimist(process.argv.slice(2));
 
 var err = {
   errorHandler: function (error) {
-    gutil.log("Error: " + error.message);
-    gutil.beep();
+    log.error("Error: " + error.message);
     this.emit("end");
   },
 };
@@ -35,10 +34,10 @@ var err = {
 // =============================================================================
 
 gulp.task("sass", function () {
-  gulp
+  return gulp
     .src("sass/**/*.{scss,sass}")
     .pipe(wait(100))
-    .pipe(sass())
+    .pipe(sass({ silenceDeprecations: ["import", "global-builtin", "slash-div"] }).on("error", sass.logError))
     .pipe(gulp.dest("css/"));
 });
 
@@ -49,7 +48,7 @@ gulp.task("sass", function () {
 gulp.task("css", function () {
   var plugins = [
     //precss(),
-    autoprefixer({ browsers: ["last 2 version"] }),
+    autoprefixer(),
     cssnano(),
   ];
 
@@ -116,13 +115,14 @@ gulp.task("sprite", function () {
 // BrowserSync
 // =============================================================================
 
-gulp.task("browser-sync", function () {
+gulp.task("browser-sync", function (done) {
   browserSync({
     server: {
       baseDir: "./",
     },
     notify: false,
   });
+  done();
 });
 
 // =============================================================================
@@ -135,10 +135,10 @@ gulp.task("deploy", function () {
     host: "gold.elastictech.org",
     user: args.user,
     password: args.password,
-    log: gutil.log,
+    log: log,
     parallel: 10,
   });
-  gulp
+  return gulp
     .src(["./**/*.*", "!./.*", "!./node_modules/**/*.*"])
     .pipe(conn.dest(remotePath));
 });
@@ -147,15 +147,18 @@ gulp.task("deploy", function () {
 // Watcher
 // =============================================================================
 
-gulp.task("watch", ["sass", "css", "browser-sync"], function () {
-  gulp.watch("img/sprite.svg");
-  gulp.watch("**/*.{scss,sass}", ["sass"]);
-  gulp.watch("css/style.css", ["css"]);
-  gulp.watch("img/svg/*.svg", ["sprite"]);
-  gulp.watch("js/*.js", browserSync.reload);
-  gulp.watch("*.html", browserSync.reload);
-});
+gulp.task(
+  "watch",
+  gulp.series(gulp.parallel("sass", "css", "browser-sync"), function () {
+    gulp.watch("img/sprite.svg");
+    gulp.watch("**/*.{scss,sass}", gulp.series("sass"));
+    gulp.watch("css/style.css", gulp.series("css"));
+    gulp.watch("img/svg/*.svg", gulp.series("sprite"));
+    gulp.watch("js/*.js").on("change", browserSync.reload);
+    gulp.watch("*.html").on("change", browserSync.reload);
+  })
+);
 
-gulp.task("build", ["sass", "css", "sprite"]);
+gulp.task("build", gulp.series("sass", "css", "sprite"));
 
-gulp.task("default", ["watch"]);
+gulp.task("default", gulp.series("watch"));
