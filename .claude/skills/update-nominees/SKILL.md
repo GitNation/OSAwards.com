@@ -72,24 +72,28 @@ Change the `<h3 class="section__title">` text from `<previous_year> Nominees` to
 
 ## Step 4 — Rewrite the nominees section
 
-Replace everything inside `<section class="section nominees" id="nominees"> <div class="container">` from the closing `</div>` of the title `slider-nav-wrap` block down to the end of the last `</ul>` of the existing categories.
+Replace everything inside `<section class="section nominees" id="nominees"> <div class="container">` from the closing `</div>` of the title `slider-nav-wrap` block down to the end of the last category `</section>` (i.e. the last `<section class="sec-nominees">…</section>` block). The outer `<section id="nominees">` and its title `slider-nav-wrap` stay intact.
 
-The existing structure to use as a template (per category):
+The existing structure to use as a template (per category). Each category is wrapped in its own `<section class="sec-nominees">`:
 
 ```html
-          <div class="section__desc slider-nav-wrap">
-            <div class="slider-nav-wrap__left">
-              <h4 class="section__sub-title" data-aos="fade-left">{{Category Name}}</h4>
-              <p class="section__p" data-aos="fade-in">
-                {{Category description — leave EMPTY for now, we'll fill later. Just keep an empty <p>.}}
-              </p>
+          <section class="sec-nominees">
+            <div class="section__desc slider-nav-wrap">
+              <div class="slider-nav-wrap__left">
+                <h4 class="section__sub-title" data-aos="fade-left">{{Category Name}}</h4>
+                <p class="section__p" data-aos="fade-in">
+                  {{Category description — leave EMPTY for now, we'll fill later. Just keep an empty <p>.}}
+                </p>
+              </div>
             </div>
-          </div>
 
-          <ul class="nominees-list {{slider-class}}">
-            {{one <li> per project}}
-          </ul>
+            <ul class="nominees-list {{slider-class}}">
+              {{one <li> per project}}
+            </ul>
+          </section>
 ```
+
+The outer `<section class="section nominees" id="nominees">` holds the year heading and a `<div class="container">` that contains one `<section class="sec-nominees">` per category. Do NOT skip the per-category wrapper — it's used for layout styling.
 
 Per project `<li>`:
 
