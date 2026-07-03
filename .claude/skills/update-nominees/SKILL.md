@@ -12,7 +12,7 @@ This skill is **stage 1 of an annual update flow**:
 1. **`update-nominees` (this skill)** — rebuild structure with new categories and projects. Logos = placeholder, descriptions = empty, no winners.
 2. **(later) descriptions** — user pastes descriptions per project; we fill `<p class="nominees-list__desc">`.
 3. **(later) logos** — user drops files into `pic/<year>/`; user (or another skill) updates `<img src>`.
-4. **(later) winners** — separate command marks chosen projects with class `winner`.
+4. **(later) winners** — the `mark-winners` skill marks chosen projects with class `winner`, moves each to the top of its category, and renumbers `data-aos-delay`.
 5. **(end of year) `archive-winners`** — generates `<year>.html` from winners.
 
 This skill does only step 1.
